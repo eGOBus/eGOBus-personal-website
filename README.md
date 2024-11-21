@@ -8,29 +8,116 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
+# E-GOBus Personal Website 🌐
+
+Welcome to the **E-GOBus Personal Website** repository! This website serves as a 3D animated showcase for the E-GOBus project, designed to captivate customers and provide an interactive experience.
+
+---
+
+## 🔥 Features
+
+- **3D Animations**: Engaging visuals and dynamic transitions.
+- **Project Showcase**: Comprehensive details about the E-GOBus initiative.
+- **Responsive Design**: Accessible on various devices, including desktops, tablets, and smartphones.
+- **Interactive Elements**: Enhance user engagement with modern web technologies.
+
+---
+
+## 🛠️ Technologies Used
+
+- **HTML5** for semantic structure
+- **CSS3** and **TailWind CSS** for styles and animations
+- **JavaScript** for interactivity
+- **Three.js** for 3D rendering
+- **React + Vite**-Front end library
+
+
+---
+
+## 📂 Folder Structure
+
+```plaintext
+E-GOBus-Website/
+├── public/
+│   ├── images/          # Static images
+│  
+├── src/
+│   ├── components/      # Reusable UI components
+│   ├── pages/           # Web pages
+│   
+├── .gitignore
+├── README.md
+└── package.json
+```
+
+---
+
+## 🚀 How to Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/eGOBus/eGOBus-personal-website.git
+   cd eGOBus-personal-website
+   ```
+
+2. Install dependencies (if applicable):
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to:
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## 📢 About E-GOBus
+
+**E-GOBus** is a forward-thinking project aimed at revolutionizing school transportation with innovative solutions. The personal website showcases the project's vision and features to engage potential users and stakeholders.
+
+---
+
+## 💡 Future Enhancements
+
+- Add multilingual support.
+- Incorporate real-time data visualization.
+- Optimize for better performance.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you have suggestions or want to report bugs, feel free to open an issue or submit a pull request.
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## ✨ Acknowledgments
+
+Thanks to all contributors and supporters of the E-GOBus initiative!
+
+---
+
+### 🌟 Stay Connected
+- [Email Us]
+- mailto:**egobusgsc@gmailcom
+**```
+
+---
 
 
 
 
 
 
-
-
-
-   <div id="main" className="flex flex-col md:flex-row h-auto w-full overflow-hidden ">
-   
-    <div id="left-part" className="w-full h-auto pt-0 md:w-1/2 mt-20 p-20 pl-20 pt-30 lg:p-[4%]" >
-        <h1 className="font-semibold text-left leading-tight text-5xl md:text-4xl lg:text-6xl pt-0" >
-            e-Go Bus</h1>
-        <h3  className="font-semibold text-left leading-none text-2xl  pt-2">The Smart Way to Monitor School Commutes!
-        </h3>
-        <p className="text-base md:text-lg text-left mt-4">
-           e-GO Bus is an essential mobile app designed to keep parents and school authorities connected and informed. With real-time GPS tracking and instant notifications, you’ll always know the location and status of your child’s school bus. Get alerts on arrivals, pickups, delays, and even report absences with a tap. Friendly and easy to navigate, e-GO Bus also features attendance monitoring, forgotten item notifications, and accurate arrival estimates that consider current traffic conditions. Your child's safe commute is just a glance away with e-GO Bus your partner for peace of mind on every school day.
-        </p>
-        
-    </div>
-    <div id="img" className="bg-[url('/images/bus.jpg')] bg-cover bg-center h-auto w-full md:w-1/2 flex items-center justify-center p-2 overflow-hidden ">
-
-                </div>                    
-    </div>
-      </>
