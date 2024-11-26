@@ -1,0 +1,45 @@
+/* Custom cursor */
+.cursor {
+    position: absolute;
+    transition: transform 0.2s ease-out;
+  }
+  
+  .smoke {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: gray;
+    border-radius: 50%;
+    animation: smokeTrail 1s ease-out forwards;
+  }
+  
+  @keyframes smokeTrail {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(2);
+    }
+  }
+  
+  /* Add fading effect for the smoke */
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-15px);
+    }
+  }
+  
