@@ -28,10 +28,10 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold text-white mb-4 hover:text-yellow-400 transition-colors">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/home" className="hover:text-yellow-400 transition-transform transform hover:scale-105">Home</a></li>
+              <li><a href="/" className="hover:text-yellow-400 transition-transform transform hover:scale-105">Home</a></li>
               <li><a href="/about" className="hover:text-yellow-400 transition-transform transform hover:scale-105">About Us</a></li>
               <li><a href="/contact" className="hover:text-yellow-400 transition-transform transform hover:scale-105">Contact Us</a></li>
-              <li><a href="/services" className="hover:text-yellow-400 transition-transform transform hover:scale-105">Our Services</a></li>
+              <li><a href="/apps" className="hover:text-yellow-400 transition-transform transform hover:scale-105">Our Services</a></li>
             </ul>
           </div>
 
@@ -39,7 +39,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold text-white mb-4 hover:text-yellow-400 transition-colors">Contact Info</h3>
             <p className="text-gray-400">E-GO Bus Company</p>
-            <p className="text-gray-400">1234 Elm Street, Suite 567</p>
+            <p className="text-gray-400">TKR College,HYD</p>
             <p className="text-gray-400">Phone: +91 9440195389</p>
             <p className="text-gray-400">Email: egobusgsc@gmail.com</p>
           </div>
