@@ -24,7 +24,7 @@ const Home = () => {
           </div>
         </div>
         {/* Right Section with Lottie Animation */}
-      <div className="md:w-[50%] w-[100%] lg:h-auto h-[200px] relative flex justify-center items-center">
+      <div className="md:w-[50%] mt-3 w-[100%] lg:h-auto h-[200px] relative flex justify-center items-center">
         <Player
           src="splashScreenAnimation.json" // Your Lottie animation path
           loop
