@@ -1,19 +1,132 @@
-import React from 'react'
+import React from 'react';
+import { FaPhoneAlt, FaEnvelope, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
-function Contact() {
+import Footer from "../components/Footer";
+const Contact = () => {
   return (
-    <div>
-       <form>
-        <label className='text-2xl' for="name">Name:</label>
-        <input className='text-xl h-10 w-[30%] flex flex-row border-4 ' type="text" id="name" name="name" required />
-        <label className='text-2xl' for="name">Email:</label>
-        <input className='text-xl h-10 w-[30%] flex flex-row border-4 ' type="email" id="email" name="email" required />
-        <label className='text-2xl' for="name">Message:</label>
-        <input className='text-xl h-30 w-[30%] flex flex-row border-4 ' type="textarea" id="msg" name="msg" required />
-        <button className='text-xl m-5 justify-center pt-1 items-center h-10 w--full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg'>Submit</button>
-      </form>
-    </div>
-  )
-}
+    <>
+    <div className="bg-gray-50 py-16 px-4 mt-8 sm:px-6 lg:px-8">
+      {/* Header Section */}
+      <div className="text-center mb-12">
+        <img src="conct.jpeg" alt="pic" class="w-full h-[300px]"/>
+        <h2 className="text-3xl font-semibold text-gray-800 mb-2">Get in Touch with Us</h2>
+        <p className="mb-8 text-center">
+  We’d love to hear from you! Whether you have any questions, need assistance, or simply want to share your thoughts with us, we’re here to help. Just fill out the form below, and our team will get back to you as soon as possible. Your feedback matters!
+</p>
 
-export default Contact
+      </div>
+
+      {/* Contact Form Section */}
+      <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg"  style={{
+          backgroundImage: "url('form.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "right bottom",
+        }}>
+        <form action="#" method="POST">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6 ">
+            {/* Name Input */}
+            <div className="flex flex-col">
+              <label className="text-lg font-medium text-gray-700 mb-2" htmlFor="name">Full Name</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required 
+                className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" 
+                placeholder="Enter your full name" 
+              />
+            </div>
+
+            {/* Email Input */}
+            <div className="flex flex-col">
+              <label className="text-lg font-medium text-gray-700 mb-2" htmlFor="email">Email Address</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" 
+                placeholder="Enter your email address" 
+              />
+            </div>
+          </div>
+
+          <div className="mb-6">
+            {/* Message Textarea */}
+            <label className="text-lg font-medium text-gray-700 mb-2" htmlFor="message">Your Message</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              required 
+              className="px-4 py-2 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-yellow-400" 
+              placeholder="Write your message here" 
+              rows="6"
+            ></textarea>
+          </div>
+
+          {/* Submit Button */}
+          <div className="flex justify-center">
+            <button 
+              type="submit" 
+              className="bg-yellow-400  text-white py-2 px-8 rounded-lg hover:bg-yellow-500  transition-all duration-300 shadow-md">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+
+      {/* Contact Info Section */}
+      <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+        {/* Phone */}
+        <div className="transition-transform transform hover:scale-105 hover:shadow-lg p-4 rounded-lg bg-white">
+          <FaPhoneAlt className="text-3xl text-yellow-400  mx-auto mb-3 hover:text-yellow-500  transition-colors" />
+          <h3 className="text-lg font-semibold text-gray-700">Phone</h3>
+          <p className="text-gray-600">+91 9440195389</p>
+        </div>
+
+        {/* Email */}
+        <div className="transition-transform transform hover:scale-105 hover:shadow-lg p-4 rounded-lg bg-white">
+          <FaEnvelope className="text-3xl text-yellow-400  mx-auto mb-3 hover:text-yellow-500  transition-colors" />
+          <h3 className="text-lg font-semibold text-gray-700">Email</h3>
+          <p className="text-gray-600">egobusgsc@gmail.com</p>
+        </div>
+
+        {/* Social Media */}
+        <div className="transition-transform transform hover:scale-105 hover:shadow-lg p-4 rounded-lg bg-white">
+          <h3 className="text-lg font-semibold text-gray-700 mb-3">Follow Us</h3>
+          <div className="flex justify-center space-x-6 ">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <FaFacebook className="text-2xl text-yellow-300 hover:text-yellow-500  transition-colors" />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <FaTwitter className="text-2xl text-yellow-300 hover:text-yellow-500  transition-colors" />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="text-2xl text-yellow-300 hover:text-yellow-500  transition-colors" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Google Map Section */}
+      <div className="mt-16 lg:w-[80%] lg:pl-[20%] justify-center">
+        <div className="h-[400px] rounded-lg overflow-hidden shadow-lg">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.439844789017!2d144.96305831590404!3d-37.814218479751006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d47c8b88b47%3A0x7e589af37e9b40b8!2sEGO%20Bus%20Company!5e0!3m2!1sen!2sus!4v1617953604564!5m2!1sen!2sus"
+            width="100%"
+            height="100%"
+            frameBorder="0"
+            allowFullScreen=""
+            aria-hidden="false"
+            tabIndex="0"
+            title="Map"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <Footer/>
+    </>
+  );
+};
+
+export default Contact;

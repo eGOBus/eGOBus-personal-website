@@ -1,9 +1,10 @@
 import React from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
-
+import Footer from "../components/Footer";
 const Home = () => {
 
   return (
+    <>
     <div>
       {/* Hero Section */}
       <div className="h-[100vh] relative bg-white lg:flex lg:px-24 px-6 lg:py-20 pt-28 text-gray-800 md:flex-row lg:gap-0 gap-5 z-40">
@@ -138,6 +139,8 @@ const Home = () => {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 
