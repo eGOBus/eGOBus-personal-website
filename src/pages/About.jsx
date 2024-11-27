@@ -8,7 +8,7 @@ const About = () => {
 <div className="mt-10 min-h-screen bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 py-12 px-4 sm:px-6 lg:px-8">
   <div className="max-w-7xl mx-auto text-center">
     {/* Image Section */}
-    <div className="relative mx-auto w-full max-w-4xl">
+    <div className="relative mx-auto w-[100vw] max-w-4xl">
       <img 
         src="about.jpg" 
         alt="pic" 
