@@ -112,7 +112,7 @@ const Contact = () => {
       <div className="mt-16 lg:w-[80%] lg:pl-[20%] justify-center">
         <div className="h-[400px] rounded-lg overflow-hidden shadow-lg">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.439844789017!2d144.96305831590404!3d-37.814218479751006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d47c8b88b47%3A0x7e589af37e9b40b8!2sEGO%20Bus%20Company!5e0!3m2!1sen!2sus!4v1617953604564!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3806.219342061998!2d78.539031!3d17.323981!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba26e59b5a44b%3A0xf9ceea7ddab4a12c!2sTKR%20College%20of%20Engineering%20%26%20Technology!5e0!3m2!1sen!2sin!4v1690611765343!5m2!1sen!2sin"
             width="100%"
             height="100%"
             frameBorder="0"

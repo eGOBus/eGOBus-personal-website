@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="h-[70px] md-lg:h-[80px] bg-[#fcd32d] flex justify-between items-center py-3 md-lg:px-4 px-3 rounded-b-[50px] shadow-lg fixed top-0 left-0 right-0 z-[100]">
+    <nav className="h-[70px] md-lg:h-[80px] bg-[#fcd32d] flex justify-around items-center py-3 md-lg:px-4 px-3 rounded-b-[50px] shadow-lg fixed top-0 left-0 right-0 z-[100] ">
       {/* Logo and Title */}
       <NavLink to="/" className="flex items-center gap-2 ml-4" onClick={handleNavLinkClick}>
         <img
@@ -36,15 +36,15 @@ const Navbar = () => {
       </NavLink>
 
       {/* Menu Icon */}
-      <div onClick={toggleMenu} className="lg:hidden w-12 h-12 cursor-pointer">
-        <i className="fa-solid fa-bars text-[1.5rem] pt-1 text-gray-800"></i>
+      <div onClick={toggleMenu} className="lg:hidden w-12 h-12 cursor-pointer ">
+        <i className="fa-solid fa-bars text-[1.5rem] pt-2 text-gray-800 "></i>
       </div>
 
       {/* Dropdown and Menu */}
       <div
         className={`${
           isMenuOpen ? 'block' : 'hidden'
-        } absolute top-[70px] right-0 bg-[#fcd32d] w-[90%] lg:w-auto lg:static lg:flex lg:items-center lg:gap-10 lg:py-0 py-5 lg:shadow-none shadow-lg rounded-[50px] mt-2 lg:flex-row flex flex-col font-bold text-center`}
+        } absolute top-[70px] right-5 bg-[#fcd32d] w-[90%]  lg:w-auto lg:static lg:flex lg:items-center lg:gap-10 lg:py-0 py-5 lg:shadow-none shadow-lg rounded-[50px] mt-2 lg:flex-row flex flex-col font-bold text-center`}
       >
         <NavLink
           to="/"

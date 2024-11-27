@@ -7,7 +7,7 @@ const Home = () => {
     <>
     <div>
       {/* Hero Section */}
-      <div className="h-[100vh] relative bg-white lg:flex lg:px-24 px-6 lg:py-20 pt-28 text-gray-800 md:flex-row lg:gap-0 gap-5 z-40">
+      <div className="h-[100vh] relative bg-white md:gap-10 lg:flex lg:px-24 px-6 lg:py-20 pt-28 text-gray-800 md:flex-row lg:gap-0 gap-5 z-40">
         {/* Left Section */}
         <div className="left flex flex-col justify-center lg:w-[50%] w-[100%] pt-8">
           {/* Title Section */}
@@ -25,7 +25,7 @@ const Home = () => {
           </div>
         </div>
         {/* Right Section with Lottie Animation */}
-      <div className="md:w-[50%] mt-3 w-[100%] lg:h-auto h-[200px] relative flex justify-center items-center">
+      <div className="md:w-[50%] md:mt-10 w-[100%] lg:h-auto h-[200px] relative flex justify-center items-center">
         <Player
           src="splashScreenAnimation.json" // Your Lottie animation path
           loop

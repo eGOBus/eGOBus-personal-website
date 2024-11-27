@@ -7,11 +7,7 @@ const Footer = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 opacity-10"
-        style={{
-          backgroundImage: "url('/path/to/school-bus-image.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "right bottom",
-        }}
+        
       />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-fadeIn">
         {/* Top Section */}
