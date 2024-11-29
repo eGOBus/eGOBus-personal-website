@@ -6,18 +6,16 @@ const About = () => {
     <>
   {/* Hero Section */}
 <div className="mt-10 min-h-screen bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 py-12 px-4 sm:px-6 lg:px-8">
-  <div className="max-w-7xl mx-auto text-center">
-    {/* Image Section */}
-    <div className="relative mx-auto w-[100vw] max-w-4xl">
-      <img 
-        src="about.jpg" 
-        alt="pic" 
-        className="w-full h-[200px] sm:h-[300px] md:h-[400px] object-cover rounded-lg shadow-md"
-      />
-    </div>
-    {/* Content Section */}
-    <div className="mt-10 sm:mt-12 md:mt-16 px-4">
-      <h2 className="text-xl font-bold text-gray-900 sm:text-2xl md:text-3xl">
+<div className="text-center mb-12">
+    <img 
+      src="about.jpg" 
+      alt="pic" 
+      className="w-full h-[300px] object-fit rounded-lg shadow-md"
+    />
+  </div>
+
+  
+      <h2 className="text-xl font-bold text-gray-900 sm:text-2xl md:text-3xl text-center">
         Your Gateway to Peace of Mind
       </h2>
       <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl leading-relaxed text-gray-700">
@@ -26,10 +24,9 @@ const About = () => {
         with instant updates about the bus’s location. Whether you’re wondering if your child made it on board 
         or need to plan a timely pickup, e-GO Bus ensures you stay informed every step of the way.
       </p>
-    </div>
-  </div>
+    
+ 
 </div>
-
 
       {/* Who We Are Section */}
       <div className="h-min-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
