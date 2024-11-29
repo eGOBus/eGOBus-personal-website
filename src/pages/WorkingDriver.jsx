@@ -5,12 +5,12 @@ import Footer from "../components/Footer";
 const WorkingDriver = () => {
   const testimonials = [
     {
-      name: "John Doe",
+      name: "Ramesh",
       feedback: "The real-time updates have made my job so much easier. I feel supported and connected at all times.",
       image: "sri.jpg",
     },
     {
-      name: "Jane Smith",
+      name: "Shekar",
       feedback: "I love the navigation tools! They save me so much time and reduce stress during busy mornings.",
       image: "kc.jpg",
     },
