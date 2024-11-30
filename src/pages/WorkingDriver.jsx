@@ -75,76 +75,104 @@ const WorkingDriver = () => {
       </section>
 
       {/* Driver Process Workflow Section */}
-      <section className="container mx-auto lg:w-2/3 px-6 py-12 text-center">
-        <h2 className="text-3xl font-semibold text-center justify-center text-blue-600 mb-8">Driver Process Workflow</h2>
-        <div className="space-y-6">
-          
-          {/* Step 1: One-Time Login */}
-          <div className="bg-white shadow-md rounded-lg p-6 text-center justify-center">
-            <h3 className="text-xl font-semibold text-gray-900 flex items-center  justify-center">
-              <FaCarAlt className="mr-3" /> Step 1: One-Time Login
-            </h3>
-            <p className="text-gray-600">Log in once using your credentials. Your session remains active until you log out manually.</p>
-          </div>
-          
-          {/* Step 2: Trip Selection */}
-          <div className="bg-white shadow-md rounded-lg p-6 text-center">
-            <h3 className="text-xl font-semibold text-gray-900 flex items-center  justify-center">
-              <FaClipboardList className="mr-3" /> Step 2: Trip Selection
-            </h3>
-            <p className="text-gray-600">Select the assigned trip for the day from your dashboard. It includes pickup/drop-off routes and timings.</p>
-          </div>
-          
-          {/* Step 3: Vehicle Health Monitoring */}
-          <div className="bg-white shadow-md rounded-lg p-6">
-            <h3 className="text-xl font-semibold text-gray-900 flex items-center  justify-center">
-              <FaCheckCircle className="mr-3" /> Step 3: Vehicle Health Monitoring
-            </h3>
-            <p className="text-gray-600">Perform pre-trip vehicle health checks like fuel, tire pressure, and safety equipment.</p>
-          </div>
-          
-          {/* Step 4: GPS Navigation */}
-          <div className="bg-white shadow-md rounded-lg p-6">
-            <h3 className="text-xl font-semibold text-gray-900 flex items-center  justify-center">
-              <FaRoute className="mr-3" /> Step 4: GPS Navigation
-            </h3>
-            <p className="text-gray-600">Navigate using real-time GPS to the next stop, with traffic updates and optimal routes.</p>
-          </div>
-          
-          {/* Step 5: Student Pickup & Attendance */}
-          <div className="bg-white shadow-md rounded-lg p-6">
-            <h3 className="text-xl font-semibold text-gray-900 flex items-center  justify-center">
-              <FaCheckCircle className="mr-3" /> Step 5: Student Pickup & Attendance
-            </h3>
-            <p className="text-gray-600">Mark students as "Boarded" or "Absent" and notify parents through the app.</p>
-          </div>
-          
-          {/* Step 6: Safety and Communication */}
-          <div className="bg-white shadow-md rounded-lg p-6">
-            <h3 className="text-xl font-semibold text-gray-900 flex items-center  justify-center">
-              <FaExclamationTriangle className="mr-3" /> Step 6: Safety and Communication
-            </h3>
-            <p className="text-gray-600">Use in-app messaging to stay connected with management and parents. Emergency alerts with the SOS Button.</p>
-          </div>
+     {/* Driver Process Workflow Section */}
+<section className="container mx-auto lg:w-2/3 px-6 py-12 text-center">
+  <h2 className="text-3xl font-semibold text-center justify-center text-blue-600 mb-8">
+    Driver Process Workflow
+  </h2>
+  <div className="space-y-6">
+    {/* Step 1: One-Time Login */}
+    <div className="bg-white shadow-md rounded-lg p-6 text-center">
+      <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+        <FaCarAlt className="text-2xl mb-2 sm:mb-0 sm:mr-3" /> 
+        Step 1: One-Time Login
+      </h3>
+      <p className="text-gray-600">
+        Log in once using your credentials. Your session remains active until you log out manually.
+      </p>
+    </div>
 
-          {/* Step 7: Drop-Off Process */}
-          <div className="bg-white shadow-md rounded-lg p-6">
-            <h3 className="text-xl font-semibold text-gray-900 flex items-center  justify-center">
-              <FaCheckCircle className="mr-3" /> Step 7: Drop-Off Process
-            </h3>
-            <p className="text-gray-600">Verify and mark students as "Dropped Off" at each stop and notify parents.</p>
-          </div>
+    {/* Repeat similar adjustments for the rest of the steps */}
+    {/* Step 2: Trip Selection */}
+    <div className="bg-white shadow-md rounded-lg p-6 text-center">
+      <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+        <FaClipboardList className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+        Step 2: Trip Selection
+      </h3>
+      <p className="text-gray-600">
+        Select the assigned trip for the day from your dashboard. It includes pickup/drop-off routes and timings.
+      </p>
+    </div>
 
-          {/* Step 8: Post-Trip Summary */}
-          <div className="bg-white shadow-md rounded-lg p-6">
-            <h3 className="text-xl font-semibold text-gray-900 flex items-center  justify-center">
-              <FaClipboardList className="mr-3" /> Step 8: Post-Trip Summary
-            </h3>
-            <p className="text-gray-600">Review the trip summary, including students picked up and dropped off, route completion, and attendance discrepancies.</p>
-          </div>
+    {/* Continue for all other steps */}
+    {/* Step 3: Vehicle Health Monitoring */}
+    <div className="bg-white shadow-md rounded-lg p-6">
+      <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+        <FaCheckCircle className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+        Step 3: Vehicle Health Monitoring
+      </h3>
+      <p className="text-gray-600">
+        Perform pre-trip vehicle health checks like fuel, tire pressure, and safety equipment.
+      </p>
+    </div>
+  {/* Step 4: GPS Navigation */}
+<div className="bg-white shadow-md rounded-lg p-6">
+  <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+    <FaRoute className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+    Step 4: GPS Navigation
+  </h3>
+  <p className="text-gray-600">
+    Navigate using real-time GPS to the next stop, with traffic updates and optimal routes.
+  </p>
+</div>
 
-        </div>
-      </section>
+{/* Step 5: Student Pickup & Attendance */}
+<div className="bg-white shadow-md rounded-lg p-6">
+  <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+    <FaCheckCircle className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+    Step 5: Student Pickup & Attendance
+  </h3>
+  <p className="text-gray-600">
+    Mark students as "Boarded" or "Absent" and notify parents through the app.
+  </p>
+</div>
+
+{/* Step 6: Safety and Communication */}
+<div className="bg-white shadow-md rounded-lg p-6">
+  <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+    <FaExclamationTriangle className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+    Step 6: Safety and Communication
+  </h3>
+  <p className="text-gray-600">
+    Use in-app messaging to stay connected with management and parents. Emergency alerts with the SOS Button.
+  </p>
+</div>
+
+{/* Step 7: Drop-Off Process */}
+<div className="bg-white shadow-md rounded-lg p-6">
+  <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+    <FaCheckCircle className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+    Step 7: Drop-Off Process
+  </h3>
+  <p className="text-gray-600">
+    Verify and mark students as "Dropped Off" at each stop and notify parents.
+  </p>
+</div>
+
+{/* Step 8: Post-Trip Summary */}
+<div className="bg-white shadow-md rounded-lg p-6">
+  <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+    <FaClipboardList className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+    Step 8: Post-Trip Summary
+  </h3>
+  <p className="text-gray-600">
+    Review the trip summary, including students picked up and dropped off, route completion, and attendance discrepancies.
+  </p>
+</div>
+
+  </div>
+</section>
+
 
       {/* Driver Testimonials Section */}
       <section className="bg-gray-100 py-12">
