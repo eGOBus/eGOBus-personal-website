@@ -1,179 +1,204 @@
-import React from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import React from 'react';
+import { FaRoute, FaBell, FaUserCheck, FaMapMarkedAlt, FaExclamationTriangle, FaComments, FaClipboardList } from 'react-icons/fa'; // Updated icons
+import Footer from "../components/Footer";
 
-const StoryPage = () => {
-  const { scrollY } = useScroll();
-  const backgroundShift = useTransform(scrollY, [0, 1000], ["0%", "50%"]);
+const WorkingParent = () => {
+  const testimonials = [
+    {
+      name: "Anita",
+      feedback: "E-Gobus has transformed how I manage my mornings. I feel at ease knowing my child is safe.",
+      image: "parent1.jpg",
+    },
+    {
+      name: "Rajesh",
+      feedback: "Real-time tracking and notifications have made my life stress-free. Highly recommend it!",
+      image: "parent2.jpg",
+    },
+  ];
 
   return (
-    <div className="relative">
-      {/* Hero Section */}
-      <section
-        className="hero-section h-screen relative bg-gradient-to-b from-blue-600 to-blue-300"
-        style={{
-          background: "url('/images/hero-bg.svg') no-repeat center",
-          backgroundSize: "cover",
-        }}
-      >
-        <motion.div
-          className="absolute inset-0"
-          style={{ backgroundPositionY: backgroundShift }}
-        />
-        <div className="container mx-auto text-center text-white py-40">
-          <motion.h1
-            className="text-6xl font-extrabold"
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-          >
-            Welcome to E-Gobus
-          </motion.h1>
-          <p className="text-lg mt-4 max-w-3xl mx-auto">
-            Experience safety, transparency, and peace of mind for your child’s daily
-            school commute with E-Gobus. It’s more than a bus service, it’s a complete
-            solution to ensure your child’s safety and your peace of mind.
+    <div className="bg-gray-50 text-gray-800 font-sans">
+      {/* Header */}
+      <header className="py-16 bg-gradient-to-r from-blue-500 to-purple-600 text-white pt-24">
+        <div className="flex flex-col items-center">
+          <h1 className="text-4xl font-extrabold text-center mb-4">
+            Welcome to the Parent's Page!
+          </h1>
+          <p className="text-lg text-center max-w-2xl mx-auto leading-relaxed">
+            Discover how E-Gobus ensures your child’s safety, simplifies your day, and keeps you informed at every step.
           </p>
-          <motion.button
-            className="mt-8 px-8 py-4 bg-white text-blue-600 font-semibold rounded-full shadow-lg hover:bg-gray-200 transition-all"
-            whileHover={{ scale: 1.1 }}
-          >
-            Get Started
-          </motion.button>
-        </div>
-      </section>
-
-      {/* Storytelling Section */}
-      <section className="py-16 px-6 bg-white">
-        <div className="container mx-auto text-center">
-          <motion.h2
-            className="text-4xl font-bold mb-10"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            How E-Gobus Helps You
-          </motion.h2>
-        </div>
-
-        {/* Scene 1 */}
-        <div className="flex flex-col lg:flex-row items-center justify-center mb-12">
-          <motion.img
-            src="/images/morning-routine.svg"
-            alt="Morning Routine"
-            className="w-full lg:w-1/2"
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
+          <img 
+            src="ParentBanner.png" 
+            alt="Parent Page Banner" 
+            className="mb-4 rounded-lg shadow-lg pt-6"
           />
-          <div className="lg:ml-8 text-center lg:text-left mt-8 lg:mt-0">
-            <h3 className="text-3xl font-semibold text-gray-800">
-              Morning Routine, Simplified
-            </h3>
-            <p className="text-gray-600 mt-4 max-w-xl mx-auto">
-              Track your child’s bus in real-time, so you know exactly when to head
-              to the stop. No more waiting or guessing. Just a smooth start to your day.
-            </p>
-          </div>
         </div>
+      </header>
+       {/* Features Section */}
+ <section className="container mx-auto px-6 py-12">
+ <h2 className="text-3xl font-semibold text-center text-gray-900 mb-8">Key Features</h2>
+ <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+   <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
+     <h3 className="text-xl font-semibold text-blue-600 mb-4 flex items-center">
+       <FaMapMarkedAlt className="mr-3" /> Real-Time Tracking
+     </h3>
+     <p className="text-gray-600">
+       Monitor the live location of the school bus to know exactly where your child is.
+     </p>
+   </div>
+   <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
+     <h3 className="text-xl font-semibold text-blue-600 mb-4 flex items-center">
+       <FaBell className="mr-3" /> Instant Notifications
+     </h3>
+     <p className="text-gray-600">
+       Receive alerts for bus arrivals, delays, route changes, and when your child boards or deboards.
+     </p>
+   </div>
+   <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
+     <h3 className="text-xl font-semibold text-blue-600 mb-4 flex items-center">
+       <FaUserCheck className="mr-3" /> Secure Communication
+     </h3>
+     <p className="text-gray-600">
+       Easily contact the school or bus driver through the app for any queries or concerns.
+     </p>
+   </div>
+   <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
+     <h3 className="text-xl font-semibold text-blue-600 mb-4 flex items-center">
+       <FaUserCheck className="mr-3" /> Child Attendance Updates
+     </h3>
+     <p className="text-gray-600">
+       Get updates on whether your child was present or absent during pickup or drop-off.
+     </p>
+   </div>
+   <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
+     <h3 className="text-xl font-semibold text-blue-600 mb-4 flex items-center">
+       <FaExclamationTriangle className="mr-3" /> Emergency Alerts
+     </h3>
+     <p className="text-gray-600">
+       Be immediately notified in case of emergencies, like breakdowns or delays.
+     </p>
+   </div>
+ </div>
+</section>
 
-        {/* Scene 2 */}
-        <div className="flex flex-col lg:flex-row-reverse items-center justify-center mb-12">
-          <motion.img
-            src="/images/bus-tracking.svg"
-            alt="Bus Tracking"
-            className="w-full lg:w-1/2"
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
-          />
-          <div className="lg:mr-8 text-center lg:text-left mt-8 lg:mt-0">
-            <h3 className="text-3xl font-semibold text-gray-800">
-              Real-Time Updates & Safety
-            </h3>
-            <p className="text-gray-600 mt-4 max-w-xl mx-auto">
-              Know when your child boards and alights the bus. Receive alerts for
-              delays or emergencies, ensuring you're always in the loop.
-            </p>
-          </div>
-        </div>
-
-        {/* Scene 3 */}
-        <div className="flex flex-col lg:flex-row items-center justify-center mb-12 bg-blue-50">
-          <motion.img
-            src="/images/peace-of-mind.svg"
-            alt="Safety"
-            className="w-full lg:w-1/2"
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
-          />
-          <div className="lg:ml-8 text-center lg:text-left mt-8 lg:mt-0">
-            <h3 className="text-3xl font-semibold text-gray-800">
-              Peace of Mind with Every Journey
-            </h3>
-            <p className="text-gray-600 mt-4 max-w-xl mx-auto">
-              Feel confident knowing your child is always in safe hands. E-Gobus ensures
-              reliable and transparent transport with built-in safety features.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Interactive Bus Simulation */}
-      <section className="bg-gray-800 text-white py-16">
-        <div className="container mx-auto text-center">
-          <motion.h2
-            className="text-4xl font-bold mb-8"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            Track Your Child’s Bus in Real-Time
-          </motion.h2>
-          <motion.div
-            className="relative"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            <img
-              src="/images/bus-journey.svg"
-              alt="Bus Journey"
-              className="w-full"
-            />
-            <motion.div
-              className="bus-icon absolute top-1/2 transform -translate-y-1/2"
-              style={{ left: "10%" }}
-              animate={{ left: "90%" }}
-              transition={{ repeat: Infinity, duration: 10 }}
-            >
-              🚌
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Final CTA */}
-      <section className="cta-section bg-blue-600 text-white py-16 text-center">
-        <h2 className="text-4xl font-bold mb-6">
-          Join E-Gobus Today!
+      {/* Parent Process Workflow */}
+      <section className="container mx-auto lg:w-2/3 px-6 py-12 text-center">
+        <h2 className="text-3xl font-semibold text-center text-blue-600 mb-8">
+          Parent Process Workflow
         </h2>
-        <p className="text-lg mb-8">
-          Empower your child's commute with safety, transparency, and convenience.
-          Sign up today and ensure a smarter way to travel.
-        </p>
-        <motion.button
-          className="mt-4 px-12 py-4 bg-white text-blue-600 font-bold rounded-full hover:bg-gray-200 transition"
-          whileHover={{ scale: 1.1 }}
-        >
-          Get Started
-        </motion.button>
+        <div className="space-y-6">
+          {/* Step 1 */}
+          <div className="bg-white shadow-md rounded-lg p-6 text-center">
+            <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+              <FaClipboardList className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+              Step 1: Collect Credentials (Only Once) and Login
+            </h3>
+            <p className="text-gray-600">
+              Obtain your login credentials from the school management and use them to access the app.
+            </p>
+          </div>
+
+          {/* Step 2 */}
+          <div className="bg-white shadow-md rounded-lg p-6 text-center">
+            <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+              <FaMapMarkedAlt className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+              Step 2: Track the Bus
+            </h3>
+            <p className="text-gray-600">
+              Use the live GPS tracking feature to monitor your child’s commute in real-time.
+            </p>
+          </div>
+
+          {/* Step 3 */}
+          <div className="bg-white shadow-md rounded-lg p-6 text-center">
+            <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+              <FaBell className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+              Step 3: Instant Notifications
+            </h3>
+            <p className="text-gray-600">
+              Receive alerts for bus arrivals, delays, route changes, and more.
+            </p>
+          </div>
+
+          {/* Step 4 */}
+          <div className="bg-white shadow-md rounded-lg p-6 text-center">
+            <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+              <FaUserCheck className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+              Step 4: Attendance Alert
+            </h3>
+            <p className="text-gray-600">
+              Receive notifications when your child boards or deboards the bus.
+            </p>
+          </div>
+
+          {/* Step 5 */}
+          <div className="bg-white shadow-md rounded-lg p-6 text-center">
+            <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+              <FaExclamationTriangle className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+              Step 5: Item Missing Alert
+            </h3>
+            <p className="text-gray-600">
+              Be notified immediately if your child reports a missing item.
+            </p>
+          </div>
+
+          {/* Step 6 */}
+          <div className="bg-white shadow-md rounded-lg p-6 text-center">
+            <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+              <FaComments className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+              Step 6: Secure Communication
+            </h3>
+            <p className="text-gray-600">
+              Easily contact the school or bus driver for any queries or concerns.
+            </p>
+          </div>
+        </div>
       </section>
+
+      {/* YouTube Video Tutorial Section */}
+      <section className="mt-16 lg:w-[80%] lg:pl-[20%] justify-center">
+        <h2 className="text-3xl font-semibold text-center text-blue-600 mb-8">Watch Our Tutorial</h2>
+        <div className="flex justify-center">
+          <div className="h-[400px] w-[80vw] sm: h-[20vh] rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.youtube.com/embed/abcd1234" // Replace with the actual video ID
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              tabIndex="0"
+              title="YouTube Tutorial"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      {/* Parent Testimonials */}
+      <section className="bg-gray-100 py-12">
+        <h2 className="text-3xl font-semibold text-center text-blue-600 mb-8">Parent Testimonials</h2>
+        <div className="flex flex-wrap justify-center gap-8">
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className="bg-white shadow-lg rounded-lg p-6 max-w-xs text-center hover:shadow-2xl transform transition duration-300 hover:scale-105"
+            >
+              <img
+                src={testimonial.image}
+                alt={testimonial.name}
+                className="w-24 h-24 mx-auto rounded-full mb-4"
+              />
+              <p className="font-bold text-lg">{testimonial.name}</p>
+              <p className="text-gray-600 mt-2">{testimonial.feedback}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
 
-export default StoryPage;
+export default WorkingParent;
