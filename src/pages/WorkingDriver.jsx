@@ -1,134 +1,199 @@
 import React from 'react';
-import { FaRoute, FaBell, FaUserCheck, FaMapMarkedAlt, FaExclamationTriangle, FaComments, FaClipboardList } from 'react-icons/fa'; // Updated icons
+import { FaRoute, FaExclamationTriangle, FaCarAlt, FaCheckCircle, FaClipboardList } from 'react-icons/fa'; // Font Awesome icons
 import Footer from "../components/Footer";
 
-const WorkingParent = () => {
+const WorkingDriver = () => {
   const testimonials = [
     {
-      name: "Anita",
-      feedback: "E-Gobus has transformed how I manage my mornings. I feel at ease knowing my child is safe.",
-      image: "parent1.jpg",
+      name: "Ramesh",
+      feedback: "The real-time updates have made my job so much easier. I feel supported and connected at all times.",
+      image: "sri.jpg",
     },
     {
-      name: "Rajesh",
-      feedback: "Real-time tracking and notifications have made my life stress-free. Highly recommend it!",
-      image: "parent2.jpg",
+      name: "Shekar",
+      feedback: "I love the navigation tools! They save me so much time and reduce stress during busy mornings.",
+      image: "kc.jpg",
     },
   ];
 
   return (
-    <div className="bg-gray-50 text-gray-800 font-sans">
+    <div className="bg-gray-50 text-gray-800 font-sans ">
+
       {/* Header */}
-      <header className="py-16 bg-gradient-to-r from-blue-500 to-purple-600 text-white pt-24">
-        <div className="flex flex-col items-center">
-          <h1 className="text-4xl font-extrabold text-center mb-4">
-            Welcome to the Parent's Page!
-          </h1>
-          <p className="text-lg text-center max-w-2xl mx-auto leading-relaxed">
-            Discover how E-Gobus ensures your child’s safety, simplifies your day, and keeps you informed at every step.
-          </p>
-          <img 
-            src="ParentBanner.png" 
-            alt="Parent Page Banner" 
-            className="mb-4 rounded-lg shadow-lg pt-6"
-          />
-        </div>
-      </header>
+      <header className="py-16 bg-gradient-to-r from-green-400 to-blue-500 text-white pt-24">
+  <div className="flex flex-col items-center">
+    
+    <h1 className="text-4xl font-extrabold text-center mb-4">Welcome to the Driver's page!</h1>
+    <p className="text-lg text-center max-w-2xl mx-auto leading-relaxed">
+      Explore the key features and tools designed to enhance your work efficiency and safety.
+    </p>
+    <img 
+      src="Driver1.png" 
+      alt="Driver Page Banner" 
+      className="mb-4 rounded-lg shadow-lg pt-6"
+    />
+  </div>
+</header>
 
-      {/* Parent Process Workflow */}
-      <section className="container mx-auto lg:w-2/3 px-6 py-12 text-center">
-        <h2 className="text-3xl font-semibold text-center text-blue-600 mb-8">
-          Parent Process Workflow
-        </h2>
-        <div className="space-y-6">
-          {/* Step 1: Collect Credentials */}
-          <div className="bg-white shadow-md rounded-lg p-6 text-center">
-            <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
-              <FaClipboardList className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
-              Step 1: Collect Credentials (Only Once) and Login
+
+      {/* Features Section */}
+      <section className="container mx-auto px-6 py-12">
+        <h2 className="text-3xl font-semibold text-center text-gray-900 mb-8">Key Features</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+          
+          {/* GPS Navigation */}
+          <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
+            <h3 className="text-xl font-semibold text-blue-600 mb-4 flex items-center">
+              <FaRoute className="mr-3" /> GPS Navigation
             </h3>
-            <p className="text-gray-600">
-              Obtain your login credentials from the school management and use them to access the app.
+            <p className="text-gray-600 mb-4">
+              Our GPS Navigation system ensures drivers follow the most efficient and safe routes for each trip. With real-time traffic updates and route optimization, here's how it works:
             </p>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li><strong>Optimized Routes:</strong> Calculates the fastest routes...</li>
+              <li><strong>Dynamic Traffic Updates:</strong> Provides real-time alerts...</li>
+              <li><strong>Estimated Time of Arrival (ETA):</strong> Continuously adjusts ETA...</li>
+            </ul>
           </div>
 
-          {/* Step 2: Track the Bus */}
-          <div className="bg-white shadow-md rounded-lg p-6 text-center">
-            <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
-              <FaMapMarkedAlt className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
-              Step 2: Track the Bus
+          {/* SOS Emergency Button */}
+          <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
+            <h3 className="text-xl font-semibold text-blue-600 mb-4 flex items-center">
+              <FaExclamationTriangle className="mr-3" /> SOS Emergency Button
             </h3>
-            <p className="text-gray-600">
-              Monitor the live location of your child's school bus using GPS tracking.
+            <p className="text-gray-600 mb-4">
+              In case of emergencies, the SOS Button ensures a rapid response by alerting authorities and providing key information in real time.
             </p>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li>Instant notifications to school authorities...</li>
+              <li>Automatic sharing of the driver’s real-time location...</li>
+              <li>Immediate connection to emergency services...</li>
+            </ul>
           </div>
 
-          {/* Step 3: Instant Notifications */}
-          <div className="bg-white shadow-md rounded-lg p-6 text-center">
-            <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
-              <FaBell className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
-              Step 3: Instant Notifications
-            </h3>
-            <p className="text-gray-600">
-              Receive real-time alerts for bus arrivals, delays, route changes, and more.
-            </p>
-          </div>
-
-          {/* Step 4: Attendance Alert */}
-          <div className="bg-white shadow-md rounded-lg p-6 text-center">
-            <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
-              <FaUserCheck className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
-              Step 4: Attendance Alert
-            </h3>
-            <p className="text-gray-600">
-              Get notifications when your child boards or deboards the bus.
-            </p>
-          </div>
-
-          {/* Step 5: Item Missing Alert */}
-          <div className="bg-white shadow-md rounded-lg p-6 text-center">
-            <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
-              <FaExclamationTriangle className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
-              Step 5: Item Missing Alert
-            </h3>
-            <p className="text-gray-600">
-              Be notified instantly if any personal belongings are left behind on the bus.
-            </p>
-          </div>
-
-          {/* Step 6: Secure Communication */}
-          <div className="bg-white shadow-md rounded-lg p-6 text-center">
-            <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
-              <FaComments className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
-              Step 6: Secure Communication (One-way)
-            </h3>
-            <p className="text-gray-600">
-              Receive important updates and messages from the school management or bus driver. 
-              This feature is designed for one-way communication to ensure safety and clarity.
-            </p>
-          </div>
         </div>
       </section>
 
+      {/* Driver Process Workflow Section */}
+     {/* Driver Process Workflow Section */}
+<section className="container mx-auto lg:w-2/3 px-6 py-12 text-center">
+  <h2 className="text-3xl font-semibold text-center justify-center text-blue-600 mb-8">
+    Driver Process Workflow
+  </h2>
+  <div className="space-y-6">
+    {/* Step 1: One-Time Login */}
+    <div className="bg-white shadow-md rounded-lg p-6 text-center">
+      <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+        <FaCarAlt className="text-2xl mb-2 sm:mb-0 sm:mr-3" /> 
+        Step 1: One-Time Login
+      </h3>
+      <p className="text-gray-600">
+        Log in once using your credentials. Your session remains active until you log out manually.
+      </p>
+    </div>
+
+    {/* Repeat similar adjustments for the rest of the steps */}
+    {/* Step 2: Trip Selection */}
+    <div className="bg-white shadow-md rounded-lg p-6 text-center">
+      <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+        <FaClipboardList className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+        Step 2: Trip Selection
+      </h3>
+      <p className="text-gray-600">
+        Select the assigned trip for the day from your dashboard. It includes pickup/drop-off routes and timings.
+      </p>
+    </div>
+
+    {/* Continue for all other steps */}
+    {/* Step 3: Vehicle Health Monitoring */}
+    <div className="bg-white shadow-md rounded-lg p-6">
+      <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+        <FaCheckCircle className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+        Step 3: Vehicle Health Monitoring
+      </h3>
+      <p className="text-gray-600">
+        Perform pre-trip vehicle health checks like fuel, tire pressure, and safety equipment.
+      </p>
+    </div>
+  {/* Step 4: GPS Navigation */}
+<div className="bg-white shadow-md rounded-lg p-6">
+  <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+    <FaRoute className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+    Step 4: GPS Navigation
+  </h3>
+  <p className="text-gray-600">
+    Navigate using real-time GPS to the next stop, with traffic updates and optimal routes.
+  </p>
+</div>
+
+{/* Step 5: Student Pickup & Attendance */}
+<div className="bg-white shadow-md rounded-lg p-6">
+  <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+    <FaCheckCircle className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+    Step 5: Student Pickup & Attendance
+  </h3>
+  <p className="text-gray-600">
+    Mark students as "Boarded" or "Absent" and notify parents through the app.
+  </p>
+</div>
+
+{/* Step 6: Safety and Communication */}
+<div className="bg-white shadow-md rounded-lg p-6">
+  <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+    <FaExclamationTriangle className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+    Step 6: Safety and Communication
+  </h3>
+  <p className="text-gray-600">
+    Use in-app messaging to stay connected with management and parents. Emergency alerts with the SOS Button.
+  </p>
+</div>
+
+{/* Step 7: Drop-Off Process */}
+<div className="bg-white shadow-md rounded-lg p-6">
+  <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+    <FaCheckCircle className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+    Step 7: Drop-Off Process
+  </h3>
+  <p className="text-gray-600">
+    Verify and mark students as "Dropped Off" at each stop and notify parents.
+  </p>
+</div>
+
+{/* Step 8: Post-Trip Summary */}
+<div className="bg-white shadow-md rounded-lg p-6">
+  <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
+    <FaClipboardList className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
+    Step 8: Post-Trip Summary
+  </h3>
+  <p className="text-gray-600">
+    Review the trip summary, including students picked up and dropped off, route completion, and attendance discrepancies.
+  </p>
+</div>
+
+  </div>
+</section>
       {/* YouTube Video Tutorial Section */}
-      <section className="bg-gray-100 py-12">
+      <section className="mt-16 lg:w-[80%] lg:pl-[20%] justify-center">
         <h2 className="text-3xl font-semibold text-center text-blue-600 mb-8">Watch Our Tutorial</h2>
         <div className="flex justify-center">
-          <iframe 
-            width="800" 
-            height="450" 
-            src="https://www.youtube.com/embed/VIDEO_ID" 
-            title="E-Gobus Tutorial"
-            frameBorder="0" 
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-            allowFullScreen
-          ></iframe>
+          <div className="sm:h-[50vh] lg:h-[60vh] w-[80vw] ounded-lg overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.youtube.com/embed/abcd1234" // Replace with the actual video ID
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              tabIndex="0"
+              title="YouTube Tutorial"
+            ></iframe>
+          </div>
         </div>
       </section>
 
-      {/* Parent Testimonials */}
+      {/* Driver Testimonials Section */}
       <section className="bg-gray-100 py-12">
-        <h2 className="text-3xl font-semibold text-center text-blue-600 mb-8">Parent Testimonials</h2>
+        <h2 className="text-3xl font-semibold text-center text-blue-600 mb-8">Driver Testimonials</h2>
         <div className="flex flex-wrap justify-center gap-8">
           {testimonials.map((testimonial, index) => (
             <div
@@ -147,10 +212,12 @@ const WorkingParent = () => {
         </div>
       </section>
 
+   
+
       {/* Footer */}
       <Footer />
     </div>
   );
 };
 
-export default WorkingParent;
+export default WorkingDriver;

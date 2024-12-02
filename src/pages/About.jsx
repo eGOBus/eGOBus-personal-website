@@ -32,8 +32,8 @@ const About = () => {
       <div className="h-min-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h3 className="text-3xl font-semibold text-gray-900">Who We Are</h3>
-          <p className="mt-6 text-lg ">
-          e-GO Bus is the creation of three passionate and dedicated individuals: Goli Shivaprasad Reddy, Kakurala Srisailam, and Kattoju Krishna Chaitanya. The idea for e-GO Bus comes from a deep personal understanding of the challenges that students, parents, and schools face with school transportation.</p>
+          <p className="mt-6 text-lg">
+  e-GO Bus is the creation of three passionate and dedicated individuals: <strong>Goli Shivaprasad Reddy</strong>, <strong>Kakurala Srisailam</strong>, and <strong>Kattoju Krishna Chaitanya</strong>.The idea for e-GO Bus comes from a deep personal understanding of the challenges that students, parents, and schools face with school transportation.</p>
             <p className="mt-6 text-lg "> Founders Shivaprasad and Srisailam experienced these challenges firsthand during their school days. The uncertainty of bus timings, missed pickups, and lack of communication caused unnecessary stress and anxiety for both students and their families. This experience motivated them to find a solution.</p>
             <p className="mt-6 text-lg ">Recognizing the need for a modern solution, they began brainstorming ways to leverage technology to address these problems. As the idea developed, Krishna Chaitanya joined the team, bringing his technical expertise to turn their vision into a tangible product. Together, this trio combined their skills and experiences, resulting in the birth of e-GO Bus.</p>
             <p className="mt-6 text-lg ">At e-GO Bus, we are more than just a tech startup—we are a team with a shared vision to create a safer, smarter, and more reliable school transportation system. Our mission is simple: to ensure safe and stress-free commutes for students, while providing parents and school authorities with the tools to stay informed and in control. By using real-time tracking, proactive communication, and intuitive features, we aim to make school transportation predictable, less stressful, and safer for all.
@@ -50,7 +50,7 @@ const About = () => {
         className="w-40 h-40 rounded-full mx-auto object-cover shadow-md"
       />
       <h4 className="mt-4 text-xl font-semibold text-gray-900">Goli Shivaprasad Reddy</h4>
-      <p className="">Co-Founder & Visionary</p>
+      <p className="">Co-Founder </p>
     </div>
     <div className="text-center">
       <img
@@ -59,7 +59,7 @@ const About = () => {
         className="w-40 h-40 rounded-full mx-auto object-fit shadow-md"
       />
       <h4 className="mt-4 text-xl font-semibold text-gray-900">Kakurala Srisailam</h4>
-      <p className="">Co-Founder & Strategist</p>
+      <p className="">Co-Founder </p>
     </div>
     <div className="text-center">
       <img
@@ -68,7 +68,7 @@ const About = () => {
         className="w-40 h-40 rounded-full mx-auto object-cover shadow-md"
       />
       <h4 className="mt-4 text-xl font-semibold text-gray-900">Kattoju Krishna Chaitanya</h4>
-      <p className="">Co-Founder & Technical Lead</p>
+      <p className="">Co-Founder </p>
     </div>
   </div>
   </div>

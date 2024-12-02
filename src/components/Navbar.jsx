@@ -42,7 +42,7 @@ const Navbar = () => {
     <nav className="h-[70px] md-lg:h-[80px] bg-[#fcd32d] flex justify-around items-center py-3 md-lg:px-4 px-3 rounded-b-[50px] shadow-lg fixed top-0 left-0 right-0 z-[100]">
       <NavLink to="/" className="flex items-center gap-2 ml-4" onClick={handleNavLinkClick}>
         <img src="e-GO Bus.png" className="w-12 h-12 md-lg:w-14 md-lg:h-14" alt="Logo" />
-        <h1 className="text-2xl font-bold text-gray-800 md-lg:text-lg">eGO Bus</h1>
+        <h1 className="text-2xl font-bold text-gray-800 md-lg:text-lg">e-GO Bus</h1>
       </NavLink>
 
       <div onClick={toggleMenu} className="lg:hidden w-12 h-12 cursor-pointer">

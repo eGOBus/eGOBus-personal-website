@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPhoneAlt, FaEnvelope, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsapp, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 import Footer from "../components/Footer";
 const Contact = () => {
@@ -77,36 +77,43 @@ const Contact = () => {
 
       {/* Contact Info Section */}
       <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
-        {/* Phone */}
-        <div className="transition-transform transform hover:scale-105 hover:shadow-lg p-4 rounded-lg bg-white">
-          <FaPhoneAlt className="text-3xl text-yellow-400  mx-auto mb-3 hover:text-yellow-500  transition-colors" />
-          <h3 className="text-lg font-semibold text-gray-700">Phone</h3>
-          <p className="text-gray-600">+91 9440195389</p>
-        </div>
+  {/* Phone */}
+  <div className="transition-transform transform hover:scale-105 hover:shadow-lg p-4 rounded-lg bg-white">
+    <FaPhoneAlt className="text-3xl text-yellow-400 mx-auto mb-3 hover:text-yellow-500 transition-colors" />
+    <h3 className="text-lg font-semibold text-gray-700">Phone</h3>
+    <p className="text-gray-600">+91 9440195389</p>
+  </div>
 
-        {/* Email */}
-        <div className="transition-transform transform hover:scale-105 hover:shadow-lg p-4 rounded-lg bg-white">
-          <FaEnvelope className="text-3xl text-yellow-400  mx-auto mb-3 hover:text-yellow-500  transition-colors" />
-          <h3 className="text-lg font-semibold text-gray-700">Email</h3>
-          <p className="text-gray-600">egobusgsc@gmail.com</p>
-        </div>
+  {/* WhatsApp Contact */}
+  <div className="transition-transform transform hover:scale-105 hover:shadow-lg p-4 rounded-lg bg-white">
+    <a 
+      href="https://wa.me/9440195389" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="flex flex-col items-center"
+    >
+      <FaWhatsapp className="text-3xl text-green-500 mx-auto mb-3 hover:text-green-600 transition-colors" />
+      <h3 className="text-lg font-semibold text-gray-700">WhatsApp</h3>
+      <p className="text-gray-600">Chat with us on WhatsApp: 9440195389</p>
+    </a>
+  </div>
 
-        {/* Social Media */}
-        <div className="transition-transform transform hover:scale-105 hover:shadow-lg p-4 rounded-lg bg-white">
-          <h3 className="text-lg font-semibold text-gray-700 mb-3">Follow Us</h3>
-          <div className="flex justify-center space-x-6 ">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <FaFacebook className="text-2xl text-yellow-300 hover:text-yellow-500  transition-colors" />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="text-2xl text-yellow-300 hover:text-yellow-500  transition-colors" />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="text-2xl text-yellow-300 hover:text-yellow-500  transition-colors" />
-            </a>
-          </div>
-        </div>
-      </div>
+  {/* Social Media */}
+  <div className="transition-transform transform hover:scale-105 hover:shadow-lg p-4 rounded-lg bg-white">
+    <h3 className="text-lg font-semibold text-gray-700 mb-3">Follow Us</h3>
+    <div className="flex justify-center space-x-6">
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+        <FaFacebook className="text-2xl text-yellow-300 hover:text-yellow-500 transition-colors" />
+      </a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <FaTwitter className="text-2xl text-yellow-300 hover:text-yellow-500 transition-colors" />
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <FaInstagram className="text-2xl text-yellow-300 hover:text-yellow-500 transition-colors" />
+      </a>
+    </div>
+  </div>
+</div>
 
       {/* Google Map Section */}
       <div className="mt-16 lg:w-[80%] lg:pl-[20%] justify-center">

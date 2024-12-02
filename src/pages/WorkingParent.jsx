@@ -42,32 +42,28 @@ const WorkingParent = () => {
      <h3 className="text-xl font-semibold text-blue-600 mb-4 flex items-center">
        <FaMapMarkedAlt className="mr-3" /> Real-Time Tracking
      </h3>
-     <p className="text-gray-600">
-       Monitor the live location of the school bus to know exactly where your child is.
+     <p className="text-gray-600">Track the live location of the school bus in real-time to know exactly where your child is. Stay updated with accurate GPS tracking for a safer and more convenient commute.
      </p>
    </div>
    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
      <h3 className="text-xl font-semibold text-blue-600 mb-4 flex items-center">
        <FaBell className="mr-3" /> Instant Notifications
      </h3>
-     <p className="text-gray-600">
-       Receive alerts for bus arrivals, delays, route changes, and when your child boards or deboards.
+     <p className="text-gray-600">Stay updated with instant alerts for bus movements, including when the bus is near the pick-up point, starts its journey, reaches school, departs from school, and completes the drop-off in the evening. 
      </p>
    </div>
    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
      <h3 className="text-xl font-semibold text-blue-600 mb-4 flex items-center">
        <FaUserCheck className="mr-3" /> Secure Communication
      </h3>
-     <p className="text-gray-600">
-       Easily contact the school or bus driver through the app for any queries or concerns.
+     <p className="text-gray-600">Stay connected with timely updates and important messages from the school management or bus driver. Whether it's route changes, schedule updates, or emergency notifications, you'll be informed instantly to ensure your child's commute remains smooth and secure.
      </p>
    </div>
    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
      <h3 className="text-xl font-semibold text-blue-600 mb-4 flex items-center">
        <FaUserCheck className="mr-3" /> Child Attendance Updates
      </h3>
-     <p className="text-gray-600">
-       Get updates on whether your child was present or absent during pickup or drop-off.
+     <p className="text-gray-600">Receive detailed updates on your child’s attendance during pickup and drop-off. Get notified instantly if your child boards the bus, alights at the designated stop, or is marked absent, ensuring you stay informed about their daily commute and safety.
      </p>
    </div>
    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
@@ -75,7 +71,7 @@ const WorkingParent = () => {
        <FaExclamationTriangle className="mr-3" /> Emergency Alerts
      </h3>
      <p className="text-gray-600">
-       Be immediately notified in case of emergencies, like breakdowns or delays.
+     Receive instant notifications during emergencies, such as bus breakdowns or unexpected repairs. Stay informed about the situation in real-time, including updates on alternative arrangements, delays, or any required actions, ensuring your child’s safety and minimizing inconvenience.
      </p>
    </div>
  </div>
@@ -149,7 +145,7 @@ const WorkingParent = () => {
               Step 6: Secure Communication
             </h3>
             <p className="text-gray-600">
-              Easily contact the school or bus driver for any queries or concerns.
+            Receive important updates and messages from the school management or bus driver. 
             </p>
           </div>
         </div>
