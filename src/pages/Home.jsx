@@ -5,37 +5,39 @@ const Home = () => {
 
   return (
     <>
-  <div>
-  {/* Hero Section */}
-  <div className="h-screen  relative bg-white md:gap-10 lg:flex lg:px-24 px-6 lg:py-20 pt-28 text-gray-800 md:flex-row lg:gap-0 gap-5 z-40">
-    {/* Left Section */}
-    <div className="left flex flex-col justify-center lg:w-1/2 w-full pt-8">
-      {/* Title Section */}
-      <div className="title text-6xl font-bold tracking-normal relative mb-2 mx-auto lg:text-8xl">
-        <h1 className="gsap-text tracking-normal">e<span className="text-[#fcd32d]">GO</span> Bus</h1>
-      </div>
-      {/* Motto Section */}
-      <div className="motto text-2xl font-medium tracking-wide mt-1 relative overflow-hidden">
-        <p className="gsap-text lg:text-xl text-sm text-center lg:text-left">
-          e-GO Bus is an innovative app crafted for parents, students, and bus drivers to make school
-          commutes safer, more efficient, and less stressful. e-GO Bus delivers peace of mind by ensuring
-          every school bus journey is accounted for and easy to monitor.
-        </p>
-        <h2 className="gsap-text text-gray-600 mt-2 text-center lg:text-left"><i>~ On Time, Peace Of Mind</i></h2>
-      </div>
+    <div className="relative bg-white md:gap-10 lg:flex lg:px-24 px-6 lg:py-20 pt-28 text-gray-800 md:flex-row lg:gap-0 gap-5 z-40 min-h-screen flex items-center">
+  {/* Left Section */}
+  <div className="left flex flex-col justify-center lg:w-1/2 w-full pt-8">
+    {/* Title Section */}
+    <div className="title text-6xl font-bold tracking-normal relative mb-2 mx-auto lg:text-8xl">
+      <h1 className="gsap-text tracking-normal">
+        e<span className="text-[#fcd32d]">GO</span> Bus
+      </h1>
     </div>
-
-    {/* Right Section with Lottie Animation */}
-    <div className="md:w-1/2 w-full lg:h-auto h-56 relative flex justify-center items-center mt-8 md:mt-0">
-      <Player
-        src="splashScreenAnimation.json" // Your Lottie animation path
-        loop
-        autoplay
-        style={{ width: "100%", height: "100%" }}
-      />
+    {/* Motto Section */}
+    <div className="motto text-2xl font-medium tracking-wide mt-1 relative overflow-hidden">
+      <p className="gsap-text lg:text-xl text-sm text-center lg:text-left">
+        e-GO Bus is an innovative app crafted for parents, students, and bus drivers to make school
+        commutes safer, more efficient, and less stressful. e-GO Bus delivers peace of mind by ensuring
+        every school bus journey is accounted for and easy to monitor.
+      </p>
+      <h2 className="gsap-text text-gray-600 mt-2 text-center lg:text-left">
+        <i>~ On Time, Peace Of Mind</i>
+      </h2>
     </div>
   </div>
+
+  {/* Right Section with Lottie Animation */}
+  <div className="md:w-1/2 w-full lg:h-auto h-56 relative flex justify-center items-center mt-8 md:mt-0">
+    <Player
+      src="splashScreenAnimation.json" // Your Lottie animation path
+      loop
+      autoplay
+      style={{ width: "100%", height: "100%" }}
+    />
+  </div>
 </div>
+
 
 
       {/* What We Offer */}
