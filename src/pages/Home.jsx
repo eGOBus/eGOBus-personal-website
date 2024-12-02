@@ -5,7 +5,7 @@ const Home = () => {
 
   return (
     <>
-    <div className="relative bg-white flex items-center justify-between min-h-screen lg:gap-10 px-6 lg:px-24 py-10 text-gray-800">
+<div className="relative bg-white flex items-center justify-between min-h-screen lg:gap-10 px-6 lg:px-24 py-10 text-gray-800">
   {/* Left Section */}
   <div className="flex flex-col justify-center lg:w-1/2 w-full pt-8">
     {/* Title Section */}
