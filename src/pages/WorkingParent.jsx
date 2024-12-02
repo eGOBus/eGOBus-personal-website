@@ -155,7 +155,7 @@ const WorkingParent = () => {
       <section className="mt-16 lg:w-[80%] lg:pl-[20%] justify-center">
         <h2 className="text-3xl font-semibold text-center text-blue-600 mb-8">Watch Our Tutorial</h2>
         <div className="flex justify-center">
-          <div className="h-[400px] w-[80vw] sm: h-[20vh] rounded-lg overflow-hidden shadow-lg">
+          <div className="sm:h-[50vh] lg:h-[60vh] w-[80vw] rounded-lg overflow-hidden shadow-lg">
             <iframe
               src="https://www.youtube.com/embed/abcd1234" // Replace with the actual video ID
               width="100%"
