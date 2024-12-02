@@ -5,18 +5,18 @@ const Home = () => {
 
   return (
     <>
-    <div className="relative bg-white md:gap-10 lg:flex lg:px-24 px-6 lg:py-20 pt-28 text-gray-800 md:flex-row lg:gap-0 gap-5 z-40 min-h-screen flex items-center">
+    <div className="relative bg-white flex items-center justify-between min-h-screen lg:gap-10 px-6 lg:px-24 py-10 text-gray-800">
   {/* Left Section */}
-  <div className="left flex flex-col justify-center lg:w-1/2 w-full pt-8">
+  <div className="flex flex-col justify-center lg:w-1/2 w-full pt-8">
     {/* Title Section */}
-    <div className="title text-6xl font-bold tracking-normal relative mb-2 mx-auto lg:text-8xl">
+    <div className="title text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-normal mb-2 mx-auto">
       <h1 className="gsap-text tracking-normal">
         e<span className="text-[#fcd32d]">GO</span> Bus
       </h1>
     </div>
     {/* Motto Section */}
-    <div className="motto text-2xl font-medium tracking-wide mt-1 relative overflow-hidden">
-      <p className="gsap-text lg:text-xl text-sm text-center lg:text-left">
+    <div className="motto text-sm sm:text-base md:text-xl lg:text-2xl font-medium tracking-wide mt-1 relative overflow-hidden">
+      <p className="gsap-text text-center lg:text-left">
         e-GO Bus is an innovative app crafted for parents, students, and bus drivers to make school
         commutes safer, more efficient, and less stressful. e-GO Bus delivers peace of mind by ensuring
         every school bus journey is accounted for and easy to monitor.
