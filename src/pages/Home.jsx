@@ -7,7 +7,7 @@ const Home = () => {
     <>
   <div>
   {/* Hero Section */}
-  <div className="h-auto  relative bg-white md:gap-10 lg:flex lg:px-24 px-6 lg:py-20 pt-28 text-gray-800 md:flex-row lg:gap-0 gap-5 z-40">
+  <div className="h-screen  relative bg-white md:gap-10 lg:flex lg:px-24 px-6 lg:py-20 pt-28 text-gray-800 md:flex-row lg:gap-0 gap-5 z-40">
     {/* Left Section */}
     <div className="left flex flex-col justify-center lg:w-1/2 w-full pt-8">
       {/* Title Section */}
