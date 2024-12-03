@@ -77,12 +77,15 @@ const Contact = () => {
 
       {/* Contact Info Section */}
       <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
-  {/* Phone */}
-  <div className="transition-transform transform hover:scale-105 hover:shadow-lg p-4 rounded-lg bg-white">
-    <FaPhoneAlt className="text-3xl text-yellow-400 mx-auto mb-3 hover:text-yellow-500 transition-colors" />
-    <h3 className="text-lg font-semibold text-gray-700">Phone</h3>
-    <p className="text-gray-600">+91 9440195389</p>
-  </div>
+{/* Phone */}
+<div className="transition-transform transform hover:scale-105 hover:shadow-lg p-4 rounded-lg bg-white">
+  <a href="tel:+919440195389" className="block text-center">
+    <FaPhoneAlt className="text-3xl text-blue-400 mx-auto mb-3 hover:text-blue-500 transition-colors" />
+    <h3 className="text-lg font-semibold ">Phone</h3>
+    <p className="text-blue-600">+91 9440195389</p>
+  </a>
+</div>
+
 
   {/* WhatsApp Contact */}
   <div className="transition-transform transform hover:scale-105 hover:shadow-lg p-4 rounded-lg bg-white">

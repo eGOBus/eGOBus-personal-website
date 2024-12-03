@@ -1,4 +1,3 @@
-// App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';  // Import Navbar component
@@ -9,10 +8,12 @@ import Apps from './pages/Apps';
 import WorkingDriver from './pages/WorkingDriver';  // Example section components
 import WorkingParent from './pages/WorkingParent';
 import WorkingSchool from './pages/WorkingSchool';
+import ScrollToTop from './components/ScrollToTop'; // Import ScrollToTop component
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop /> {/* Ensure ScrollToTop is included */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
