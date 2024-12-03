@@ -147,40 +147,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      {/* <Carousel
-  swipeable={false}
-  draggable={false}
-  showDots={true}
-  responsive={responsive}
-  ssr={true} // Server-side rendering
-  infinite={true}
-  autoPlay={true}
-  autoPlaySpeed={3000}
-  keyBoardControl={true}
-  customTransition="all .5"
-  transitionDuration={500}
-  containerClass="carousel-container"
-  removeArrowOnDeviceType={["tablet", "mobile"]}
-  dotListClass="custom-dot-list-style"
-  itemClass="carousel-item-padding-40-px"
->
-  
-  <div>
-    <img src="about.jpg" alt="Item 1" className="w-full h-auto object-cover" />
-  </div>
-  <div>
-    <img src="bushead.jpg" alt="Item 2" className="w-full h-auto object-cover" />
-  </div>
-  <div>
-    <img src="goli.jpg" alt="Item 3" className="w-full h-auto object-cover" />
-  </div>
-  <div>
-    <img src="kc.jpg" alt="Item 4" className="w-full h-auto object-cover" />
-  </div>
-  <div>
-    <img src="sri" alt="Item 5" className="w-full h-auto object-cover" />
-  </div>
-</Carousel> */}
+  */}
 
 
             {/* Call-to-Action Section */}
