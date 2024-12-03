@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+
+
+html, body {
+  height: 100%;
+  overflow: hidden; /* Prevent default scrolling */
+}
+
+[data-scroll-container] {
+  height: 100vh;
+  overflow: hidden; /* Locomotive Scroll container */
+}

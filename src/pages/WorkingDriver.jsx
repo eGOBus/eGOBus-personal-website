@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaRoute, FaExclamationTriangle, FaCarAlt, FaCheckCircle, FaClipboardList } from 'react-icons/fa'; // Font Awesome icons
 import Footer from "../components/Footer";
+import "locomotive-scroll/dist/locomotive-scroll.css";
+import useLocomotiveScroll from '../hooks/useLocomotiveScroll';
 
 const WorkingDriver = () => {
   const testimonials = [
@@ -17,7 +19,7 @@ const WorkingDriver = () => {
   ];
 
   return (
-    <div className="bg-gray-50 text-gray-800 font-sans ">
+    <div className="bg-gray-50 text-gray-800 font-sans " data-scroll-section>
 
       {/* Header */}
       <header className="py-16 bg-gradient-to-r from-green-400 to-blue-500 text-white pt-24">

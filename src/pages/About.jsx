@@ -1,33 +1,65 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import Footer from "../components/Footer"; // Ensure correct path
+import "locomotive-scroll/dist/locomotive-scroll.css";
+import useLocomotiveScroll from "../hooks/useLocomotiveScroll";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
+  const scrollRef = useLocomotiveScroll();
+
+  useEffect(() => {
+    // Hero Section Animation
+    gsap.fromTo(".hero-img", { opacity: 0, y: 50 }, {
+      opacity: 1, y: 0, duration: 1, scrollTrigger: {
+        trigger: ".hero-section",
+        start: "top 80%",
+        toggleActions: "play reverse play reverse",
+      }
+    });
+    gsap.fromTo(".hero-text", { opacity: 0, y: 50 }, {
+      opacity: 1, y: 0, duration: 1.2, stagger: 0.3, scrollTrigger: {
+        trigger: ".hero-section",
+        start: "top 80%",
+        toggleActions: "play reverse play reverse",
+      }
+    });
+
+   
+   
+
+  
+  }, []);
+
   return (
-    <>
-  {/* Hero Section */}
-  <div className="mt-10 min-h-screen bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 py-12 px-4 sm:px-6 lg:px-8">
-  <div className="text-center mb-12">
-    <img 
-      src="about.jpg" 
-      alt="pic" 
-      className="w-full h-[300px] object-fit rounded-lg shadow-md"
-    />
-  </div>
+    <div ref={scrollRef} data-scroll-container>
+      {/* Hero Section */}
+      <div className="hero-section mt-10 min-h-screen bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <img
+            src="about.jpg"
+            alt="pic"
+            className="hero-img w-full h-[300px] object-fit rounded-lg shadow-md"
+          />
+        </div>
 
-  <h2 className="text-xl font-bold text-gray-900 sm:text-2xl md:text-3xl text-center lg:pt-10">
-    Your Gateway to Peace of Mind
-  </h2>
-  <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl leading-relaxed text-gray-700">
-    e-GO Bus is your reliable companion for smarter, safer, and more efficient school commutes. 
-    Our platform leverages real-time vehicle tracking to provide parents and school authorities 
-    with instant updates about the bus’s location. Whether you’re wondering if your child made it on board 
-    or need to plan a timely pickup, e-GO Bus ensures you stay informed every step of the way.
-  </p>
-</div>
-
-
-      {/* Who We Are Section */}
-      <div className="h-min-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
+        <h2 className="hero-text text-xl font-bold text-gray-900 sm:text-2xl md:text-3xl text-center lg:pt-10">
+          Your Gateway to Peace of Mind
+        </h2>
+        <p className="hero-text mt-4 sm:mt-6 text-base sm:text-lg md:text-xl leading-relaxed text-gray-700">
+          e-GO Bus is your reliable companion for smarter, safer, and more
+          efficient school commutes. Our platform leverages real-time vehicle
+          tracking to provide parents and school authorities with instant
+          updates about the bus’s location. Whether you’re wondering if your
+          child made it on board or need to plan a timely pickup, e-GO Bus
+          ensures you stay informed every step of the way.
+        </p>
+      </div>
+ {/* Who We Are Section */}
+ <div className="h-min-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h3 className="text-3xl font-semibold text-gray-900">Who We Are</h3>
           <p className="mt-6 text-lg">
@@ -70,8 +102,7 @@ const About = () => {
     </div>
   </div>
   </div>
-
-{/* Why Use e-GO Bus Section */}
+      {/* Why Use e-GO Bus Section */}
 <div className="min-h-screen bg-yellow-400 py-12 px-4 sm:px-6 lg:px-8">
   <div className="text-center">
     <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl">Why Choose e-GO Bus?</h2>
@@ -148,9 +179,7 @@ const About = () => {
     Bus for a smarter, safer, and more reliable school transportation experience.
   </p>
 </div>
-
-    {/* How Did It All Start Section */}
-<div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
   <div className="max-w-7xl mx-auto text-center">
     <h3 className="text-3xl font-semibold text-gray-900">How Did It All Start?</h3>
     <p className="mt-6 text-lg">
@@ -178,11 +207,9 @@ const About = () => {
     </div>
   </div>
 </div>
-
-
       {/* Footer Section */}
       <Footer />
-    </>
+    </div>
   );
 };
 

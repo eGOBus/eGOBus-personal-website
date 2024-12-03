@@ -1,8 +1,11 @@
 import React from "react";
 import Footer from "../components/Footer";
 import { FaGooglePlay, FaApple,FaBus } from 'react-icons/fa';
+import "locomotive-scroll/dist/locomotive-scroll.css";
+import useLocomotiveScroll from "../hooks/useLocomotiveScroll";
 
 function Apps() {
+  const scrollRef = useLocomotiveScroll()
   // Sections for the App
   const appSections = [
     {
@@ -60,7 +63,7 @@ function Apps() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-800 flex flex-col overflow-x-hidden">
+    <div ref={scrollRef} className="min-h-screen bg-gray-100 text-gray-800 flex flex-col overflow-x-hidden" data-scroll-container>
        <header className="bg-yellow-500 text-black pt-8 pb-4 relative">
         <div className="max-w-5xl mt-10 mx-auto text-center relative ">
           {/* Marquee container */}

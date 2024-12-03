@@ -1,10 +1,11 @@
 import React from 'react';
 import { FaPhoneAlt, FaWhatsapp, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
-
+import "locomotive-scroll/dist/locomotive-scroll.css";
 import Footer from "../components/Footer";
+import useLocomotiveScroll from '../hooks/useLocomotiveScroll';
 const Contact = () => {
   return (
-    <>
+    <div data-scroll-section>
     <div className="bg-gray-50 py-16 px-4 mt-8 sm:px-6 lg:px-8">
       {/* Header Section */}
       <div className="text-center mb-12">
@@ -135,7 +136,7 @@ const Contact = () => {
       </div>
     </div>
     <Footer/>
-    </>
+    </div>
   );
 };
 
