@@ -147,7 +147,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-  */}
+  
 
 
             {/* Call-to-Action Section */}
