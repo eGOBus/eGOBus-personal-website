@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaRoute, FaExclamationTriangle, FaCarAlt, FaCheckCircle, FaClipboardList } from 'react-icons/fa'; // Font Awesome icons
 import Footer from "../components/Footer";
-import "locomotive-scroll/dist/locomotive-scroll.css";
-import useLocomotiveScroll from '../hooks/useLocomotiveScroll';
+import gsapfordriver from '../hooks/gsapfordriver';
 
 const WorkingDriver = () => {
+  gsapfordriver();
   const testimonials = [
     {
       name: "Ramesh",
@@ -39,13 +39,13 @@ const WorkingDriver = () => {
 
 
       {/* Features Section */}
-      <section className="container mx-auto px-6 py-12">
-        <h2 className="text-3xl font-semibold text-center text-gray-900 mb-8">Key Features</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+      <section className="container1 mx-auto px-6 py-12">
+        <h2 className="one text-3xl font-semibold text-center text-gray-900 mb-8">Key Features</h2>
+        <div className="one grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           
           {/* GPS Navigation */}
-          <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
-            <h3 className="text-xl font-semibold text-blue-600 mb-4 flex items-center">
+          <div className="onebg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
+            <h3 className=" text-xl font-semibold text-blue-600 mb-4 flex items-center">
               <FaRoute className="mr-3" /> GPS Navigation
             </h3>
             <p className="text-gray-600 mb-4">
@@ -59,7 +59,7 @@ const WorkingDriver = () => {
           </div>
 
           {/* SOS Emergency Button */}
-          <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
+          <div className=" bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
             <h3 className="text-xl font-semibold text-blue-600 mb-4 flex items-center">
               <FaExclamationTriangle className="mr-3" /> SOS Emergency Button
             </h3>
@@ -76,13 +76,13 @@ const WorkingDriver = () => {
         </div>
       </section>
 
-      {/* Driver Process Workflow Section */}
+ 
      {/* Driver Process Workflow Section */}
 <section className="container mx-auto lg:w-2/3 px-6 py-12 text-center">
   <h2 className="text-3xl font-semibold text-center justify-center text-blue-600 mb-8">
     Driver Process Workflow
   </h2>
-  <div className="space-y-6">
+  <div className="flow space-y-6">
     {/* Step 1: One-Time Login */}
     <div className="bg-white shadow-md rounded-lg p-6 text-center">
       <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
@@ -96,7 +96,7 @@ const WorkingDriver = () => {
 
     {/* Repeat similar adjustments for the rest of the steps */}
     {/* Step 2: Trip Selection */}
-    <div className="bg-white shadow-md rounded-lg p-6 text-center">
+    <div className="flow bg-white shadow-md rounded-lg p-6 text-center">
       <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
         <FaClipboardList className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
         Step 2: Trip Selection
@@ -108,7 +108,7 @@ const WorkingDriver = () => {
 
     {/* Continue for all other steps */}
     {/* Step 3: Vehicle Health Monitoring */}
-    <div className="bg-white shadow-md rounded-lg p-6">
+    <div className="flow bg-white shadow-md rounded-lg p-6">
       <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
         <FaCheckCircle className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
         Step 3: Vehicle Health Monitoring
@@ -118,7 +118,7 @@ const WorkingDriver = () => {
       </p>
     </div>
   {/* Step 4: GPS Navigation */}
-<div className="bg-white shadow-md rounded-lg p-6">
+<div className="flow bg-white shadow-md rounded-lg p-6">
   <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
     <FaRoute className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
     Step 4: GPS Navigation
@@ -129,7 +129,7 @@ const WorkingDriver = () => {
 </div>
 
 {/* Step 5: Student Pickup & Attendance */}
-<div className="bg-white shadow-md rounded-lg p-6">
+<div className="flow bg-white shadow-md rounded-lg p-6">
   <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
     <FaCheckCircle className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
     Step 5: Student Pickup & Attendance
@@ -140,7 +140,7 @@ const WorkingDriver = () => {
 </div>
 
 {/* Step 6: Safety and Communication */}
-<div className="bg-white shadow-md rounded-lg p-6">
+<div className="flow bg-white shadow-md rounded-lg p-6">
   <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
     <FaExclamationTriangle className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
     Step 6: Safety and Communication
@@ -151,7 +151,7 @@ const WorkingDriver = () => {
 </div>
 
 {/* Step 7: Drop-Off Process */}
-<div className="bg-white shadow-md rounded-lg p-6">
+<div className="flow bg-white shadow-md rounded-lg p-6">
   <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
     <FaCheckCircle className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
     Step 7: Drop-Off Process
@@ -162,7 +162,7 @@ const WorkingDriver = () => {
 </div>
 
 {/* Step 8: Post-Trip Summary */}
-<div className="bg-white shadow-md rounded-lg p-6">
+<div className="flow bg-white shadow-md rounded-lg p-6">
   <h3 className="text-xl font-semibold text-gray-900 flex flex-col sm:flex-row items-center justify-center">
     <FaClipboardList className="text-2xl mb-2 sm:mb-0 sm:mr-3" />
     Step 8: Post-Trip Summary
@@ -175,10 +175,10 @@ const WorkingDriver = () => {
   </div>
 </section>
       {/* YouTube Video Tutorial Section */}
-      <section className="mt-16 lg:w-[80%] lg:pl-[20%] justify-center">
+      <section className="utubec mt-16 lg:w-[80%] lg:pl-[20%] justify-center">
         <h2 className="text-3xl font-semibold text-center text-blue-600 mb-8">Watch Our Tutorial</h2>
         <div className="flex justify-center">
-          <div className="sm:h-[50vh] lg:h-[60vh] w-[80vw] ounded-lg overflow-hidden shadow-lg">
+          <div className="utube sm:h-[50vh] lg:h-[60vh] w-[80vw] ounded-lg overflow-hidden shadow-lg">
             <iframe
               src="https://www.youtube.com/embed/abcd1234" // Replace with the actual video ID
               width="100%"

@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-import "react-multi-carousel/lib/styles.css";
-import "locomotive-scroll/dist/locomotive-scroll.css";
 import useGSAP_home from "../hooks/useGSAP_home";
 
 const Home = () => {
@@ -29,7 +27,7 @@ const Home = () => {
   useGSAP_home();
 
   return (
-    <div data-scroll-section>
+    <div data-scroll-section overflow-x-hidden >
       {/* Hero Section */}
       <div className="hero-section relative bg-white md:gap-10 lg:flex lg:h-[82vh] lg:px-24 px-6 lg:py-20 pt-28 text-gray-800 md:flex-row lg:gap-0 gap-5 z-40 py-20  ">
         {/* Left Section */}
@@ -50,7 +48,7 @@ const Home = () => {
               <i>~ On Time, Peace Of Mind</i>
             </h2>
             <Link to="/contact">
-              <button className="gsap-text  mt-10 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white text-base sm:text-lg lg:text-xl py-3 px-6 sm:px-8 rounded-lg hover:from-yellow-500 hover:to-yellow-700 transition-all duration-200 focus:outline-none">
+              <button className="gsap-text lg:ml-40 ml-16 mt-10 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white text-base sm:text-lg lg:text-xl py-3 px-6 sm:px-8 rounded-lg hover:from-yellow-500 hover:to-yellow-700 transition-all duration-200 focus:outline-none">
                 Get Started Now
               </button>
             </Link>

@@ -3,9 +3,10 @@ import React from 'react';
 import { FaDesktop, FaLock, FaSignInAlt, FaChartBar, FaDatabase, FaBell, FaEdit, FaMobileAlt, FaBusAlt, FaSearch, FaExclamationTriangle, FaRoute, FaUserCheck, FaMapMarkedAlt, FaClipboardList } from 'react-icons/fa';
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import Footer from "../components/Footer";
-import useLocomotiveScroll from '../hooks/useLocomotiveScroll';
+import gsapfordriver from '../hooks/gsapfordriver';
 
 const WorkingSchool = () => {
+  gsapfordriver();
   const testimonials = [
     {
       name: "Principal Sharma",
@@ -28,11 +29,11 @@ const WorkingSchool = () => {
   ];
 
   return (
-    <div className="bg-gray-50 text-gray-800 font-sans" data-scroll-section>
+    <div className=" bg-gray-50 text-gray-800 font-sans" data-scroll-section>
       {/* Header */}
       <header className="py-16 bg-gradient-to-r from-blue-500 to-purple-600 text-white">
         <div className="flex flex-col items-center">
-          <h1 className="text-4xl font-extrabold text-center mb-4 pt-10">
+          <h1 className=" text-4xl font-extrabold text-center mb-4 pt-10">
             School Bus Management 
           </h1>
           <p className="text-lg text-center max-w-2xl mx-auto leading-relaxed">
@@ -42,11 +43,11 @@ const WorkingSchool = () => {
       </header>
 
       {/* Features Section */}
-      <section className="container mx-auto px-6 py-12">
-        <h2 className="text-3xl font-semibold text-center text-blue-600 mb-8">Key Features</h2>
+      <section className="container1 mx-auto px-6 py-12">
+        <h2 className="one text-3xl font-semibold text-center text-blue-600 mb-8">Key Features</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {/* Feature Cards */}
-          <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
+          <div className="one bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
             <div className="flex flex-col items-center">
               <FaRoute className="text-3xl mb-4" />
               <h3 className="text-xl font-semibold text-blue-600 text-center">
@@ -57,18 +58,18 @@ const WorkingSchool = () => {
               Manage all school buses, routes, and schedules efficiently from a centralized system.
             </p>
           </div>
-          <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
+          <div className="one bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
             <div className="flex flex-col items-center">
               <FaUserCheck className="text-3xl mb-4" />
               <h3 className="text-xl font-semibold text-blue-600 text-center">
                 Attendance Tracking
               </h3>
             </div>
-            <p className="text-gray-600">
+            <p className="one text-gray-600">
               Automate and monitor student attendance during pickups and drop-offs for better accountability.
             </p>
           </div>
-          <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
+          <div className="one bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
             <div className="flex flex-col items-center">
               <FaMapMarkedAlt className="text-3xl mb-4" />
               <h3 className="text-xl font-semibold text-blue-600 text-center">
@@ -79,7 +80,7 @@ const WorkingSchool = () => {
               Plan and adjust bus routes to save fuel, reduce travel time, and ensure timely operations.
             </p>
           </div>
-          <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
+          <div className="one bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
             <div className="flex flex-col items-center">
               <FaClipboardList className="text-3xl mb-4" />
               <h3 className="text-xl font-semibold text-blue-600 text-center">
@@ -90,7 +91,7 @@ const WorkingSchool = () => {
               Track all buses in real-time to ensure smooth operations and immediate responses to issues.
             </p>
           </div>
-          <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
+          <div className="one bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
             <div className="flex flex-col items-center">
               <FaBell className="text-3xl mb-4" />
               <h3 className="text-xl font-semibold text-blue-600 text-center">
@@ -101,7 +102,7 @@ const WorkingSchool = () => {
               Keep parents informed with announcements, updates, or alerts directly through the app.
             </p>
           </div>
-          <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
+          <div className="one bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
             <div className="flex flex-col items-center">
               <FaExclamationTriangle className="text-3xl mb-4" />
               <h3 className="text-xl font-semibold text-blue-600 text-center">
@@ -128,7 +129,7 @@ const WorkingSchool = () => {
       </h3>
       <div className="space-y-6">
         {/* Step 1: Credential Collection */}
-        <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
+        <div className="flowl bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
           <h4 className="text-xl font-semibold text-gray-900 flex flex-col items-center">
             <FaLock className="text-2xl mb-2" />
             <span>Step 1: Credential Collection</span>
@@ -139,7 +140,7 @@ const WorkingSchool = () => {
         </div>
 
         {/* Step 2: Login & Benefits */}
-        <div className="bg-white shadow-md rounded-lg p-6">
+        <div className="flowl bg-white shadow-md rounded-lg p-6">
           <h4 className="text-xl font-semibold text-gray-900 flex flex-col items-center">
             <FaSignInAlt className="text-2xl mb-2" />
             <span>Step 2: Login & Benefits</span>
@@ -150,7 +151,7 @@ const WorkingSchool = () => {
         </div>
 
         {/* Step 3: Dashboard Analytics */}
-        <div className="bg-white shadow-md rounded-lg p-6">
+        <div className="flowl bg-white shadow-md rounded-lg p-6">
           <h4 className="text-xl font-semibold text-gray-900 flex flex-col items-center">
             <FaChartBar className="text-2xl mb-2" />
             <span>Step 3: Dashboard Analytics</span>
@@ -161,7 +162,7 @@ const WorkingSchool = () => {
         </div>
 
         {/* Step 4: Data Management */}
-        <div className="bg-white shadow-md rounded-lg p-6">
+        <div className="flowl bg-white shadow-md rounded-lg p-6">
           <h4 className="text-xl font-semibold text-gray-900 flex flex-col items-center">
             <FaDatabase className="text-2xl mb-2" />
             <span>Step 4: Data Management</span>
@@ -172,7 +173,7 @@ const WorkingSchool = () => {
         </div>
 
         {/* Step 5: Push Notification */}
-        <div className="bg-white shadow-md rounded-lg p-6">
+        <div className="flowl bg-white shadow-md rounded-lg p-6">
           <h4 className="text-xl font-semibold text-gray-900 flex flex-col items-center">
             <FaBell className="text-2xl mb-2" />
             <span>Step 5: Push Notification</span>
@@ -183,7 +184,7 @@ const WorkingSchool = () => {
         </div>
 
         {/* Step 6: Detail Updates */}
-        <div className="bg-white shadow-md rounded-lg p-6">
+        <div className="flowl bg-white shadow-md rounded-lg p-6">
           <h4 className="text-xl font-semibold text-gray-900 flex flex-col items-center">
             <FaEdit className="text-2xl mb-2" />
             <span>Step 6: Detail Updates</span>
@@ -203,7 +204,7 @@ const WorkingSchool = () => {
       </h3>
       <div className="space-y-6">
         {/* Step 1: Login */}
-        <div className="bg-white shadow-md rounded-lg p-6">
+        <div className="flowr bg-white shadow-md rounded-lg p-6">
           <h4 className="text-xl font-semibold text-gray-900 flex flex-col items-center">
             <FaSignInAlt className="text-2xl mb-2" />
             <span>Step 1: Login</span>
@@ -214,7 +215,7 @@ const WorkingSchool = () => {
         </div>
 
         {/* Step 2: Fleet Management */}
-        <div className="bg-white shadow-md rounded-lg p-6">
+        <div className="flowr bg-white shadow-md rounded-lg p-6">
           <h4 className="text-xl font-semibold text-gray-900 flex flex-col items-center">
             <FaBusAlt className="text-2xl mb-2" />
             <span>Step 2: Fleet Management</span>
@@ -225,7 +226,7 @@ const WorkingSchool = () => {
         </div>
 
         {/* Step 3: Bus Trip Notifications */}
-        <div className="bg-white shadow-md rounded-lg p-6">
+        <div className="flowr bg-white shadow-md rounded-lg p-6">
           <h4 className="text-xl font-semibold text-gray-900 flex flex-col items-center">
             <FaBell className="text-2xl mb-2" />
             <span>Step 3: Bus Trip Notifications</span>
@@ -236,7 +237,7 @@ const WorkingSchool = () => {
         </div>
 
         {/* Step 4: Search Functionality */}
-        <div className="bg-white shadow-md rounded-lg p-6">
+        <div className="flowr bg-white shadow-md rounded-lg p-6">
           <h4 className="text-xl font-semibold text-gray-900 flex flex-col items-center">
             <FaSearch className="text-2xl mb-2" />
             <span>Step 4: Search Functionality</span>
@@ -247,7 +248,7 @@ const WorkingSchool = () => {
         </div>
 
         {/* Step 5: Push Notification */}
-        <div className="bg-white shadow-md rounded-lg p-6">
+        <div className="flowr bg-white shadow-md rounded-lg p-6">
           <h4 className="text-xl font-semibold text-gray-900 flex flex-col items-center">
             <FaBell className="text-2xl mb-2" />
             <span>Step 5: Push Notification</span>
@@ -258,7 +259,7 @@ const WorkingSchool = () => {
         </div>
 
         {/* Step 6: Incident Management (SOS for Drivers) */}
-        <div className="bg-white shadow-md rounded-lg p-6">
+        <div className="flowr bg-white shadow-md rounded-lg p-6">
           <h4 className="text-xl font-semibold text-gray-900 flex flex-col items-center">
             <FaExclamationTriangle className="text-2xl mb-2" />
             <span>Step 6: Incident Management (SOS for Drivers)</span>
@@ -274,11 +275,11 @@ const WorkingSchool = () => {
 
 
 
-          {/* YouTube Video Tutorial Section */}
-          <section className="mt-16 lg:w-[80%] lg:pl-[20%] justify-center">
+        {/* YouTube Video Tutorial Section */}
+      <section className="utubec mt-16 lg:w-[80%] lg:pl-[20%] justify-center">
         <h2 className="text-3xl font-semibold text-center text-blue-600 mb-8">Watch Our Tutorial</h2>
         <div className="flex justify-center">
-          <div className="sm:h-[50vh] lg:h-[60vh] w-[80vw] rounded-lg overflow-hidden shadow-lg">
+          <div className="utube sm:h-[50vh] lg:h-[60vh] w-[80vw] ounded-lg overflow-hidden shadow-lg">
             <iframe
               src="https://www.youtube.com/embed/abcd1234" // Replace with the actual video ID
               width="100%"

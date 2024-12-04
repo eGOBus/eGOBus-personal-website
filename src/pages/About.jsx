@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Footer from "../components/Footer"; // Ensure correct path
-import "locomotive-scroll/dist/locomotive-scroll.css";
+
 import gsap_about from "../hooks/gsap_about";
 
 
@@ -11,7 +11,7 @@ const About = () => {
   gsap_about();
 
   return (
-    <div  data-scroll-container>
+    <div >
       {/* Hero Section */}
       <div className="hero-section mt-10 min-h-screen bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 py-12 px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
