@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
 import { FaGooglePlay, FaApple,FaBus } from 'react-icons/fa';
-import "locomotive-scroll/dist/locomotive-scroll.css";
 import gsapapps from "../hooks/gsapapps";
 
 function Apps() {

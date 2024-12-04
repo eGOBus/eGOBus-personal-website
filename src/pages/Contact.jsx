@@ -1,12 +1,12 @@
 import React from 'react';
 import { FaPhoneAlt, FaWhatsapp, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
-import "locomotive-scroll/dist/locomotive-scroll.css";
+
 import Footer from "../components/Footer";
 import gsap_contact from "../hooks/gsap_contact";
 const Contact = () => {
   gsap_contact();
   return (
-    <div data-scroll-section>
+    <div >
     <div className="hero-section bg-gray-50 py-16 px-4 mt-8 sm:px-6 lg:px-8">
       {/* Header Section */}
       <div className="text-center mb-12">

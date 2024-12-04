@@ -27,7 +27,7 @@ const Home = () => {
   useGSAP_home();
 
   return (
-    <div data-scroll-section overflow-x-hidden >
+    <div   className="overflow-x-hidden">
       {/* Hero Section */}
       <div className="hero-section relative bg-white md:gap-10 lg:flex lg:h-[82vh] lg:px-24 px-6 lg:py-20 pt-28 text-gray-800 md:flex-row lg:gap-0 gap-5 z-40 py-20  ">
         {/* Left Section */}

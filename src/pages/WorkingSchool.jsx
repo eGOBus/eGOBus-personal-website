@@ -1,7 +1,7 @@
 import React from 'react';
 // Importing necessary icons from react-icons library
 import { FaDesktop, FaLock, FaSignInAlt, FaChartBar, FaDatabase, FaBell, FaEdit, FaMobileAlt, FaBusAlt, FaSearch, FaExclamationTriangle, FaRoute, FaUserCheck, FaMapMarkedAlt, FaClipboardList } from 'react-icons/fa';
-import "locomotive-scroll/dist/locomotive-scroll.css";
+
 import Footer from "../components/Footer";
 import gsapfordriver from '../hooks/gsapfordriver';
 

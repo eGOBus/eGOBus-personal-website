@@ -9,7 +9,7 @@ import WorkingDriver from "./pages/WorkingDriver"; // Example section components
 import WorkingParent from "./pages/WorkingParent";
 import WorkingSchool from "./pages/WorkingSchool";
 import ScrollToTop from "./components/ScrollToTop"; // Import ScrollToTop component
-import "locomotive-scroll/dist/locomotive-scroll.css";
+
 
 const App = () => {
   return (

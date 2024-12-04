@@ -11,7 +11,7 @@ const About = () => {
   gsap_about();
 
   return (
-    <div >
+    <div className="overflow-x-hidden" >
       {/* Hero Section */}
       <div className="hero-section mt-10 min-h-screen bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 py-12 px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
