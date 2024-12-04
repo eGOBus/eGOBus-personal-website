@@ -91,8 +91,8 @@ const gsap_about = () => {
           );
           createAnimation(
             ".Features ",
-            { opacity: 0, y: 50 },
-            { opacity: 1, y: 0,duration: 2 },
+            { opacity: 0, scale: 0.92 },
+            { opacity: 1,  scale:1,duration: 2 },
             ".Why-Use-e-GOBus-Section",
             "top 65%"
           );
