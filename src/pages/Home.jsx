@@ -2,10 +2,9 @@ import React, { useEffect } from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "locomotive-scroll/dist/locomotive-scroll.css";
-import useGSAP from "../hooks/useGSAP";
+import useGSAP_home from "../hooks/useGSAP_home";
 
 const Home = () => {
   const responsive = {
@@ -27,7 +26,7 @@ const Home = () => {
   };
 
   // Initialize GSAP animations
-  useGSAP();
+  useGSAP_home();
 
   return (
     <div data-scroll-section>
@@ -79,7 +78,7 @@ const Home = () => {
             <img
               src="school.png"
               alt="School bus"
-              className="w-[80%] h-auto object-cover p-4 gsap-offer-image"
+              className="image w-[80%] h-auto object-cover p-4 gsap-offer-image"
             />
           </div>
           <div className="w-full lg:w-1/2 mt-4 items-center justify-center font-serif text-center">

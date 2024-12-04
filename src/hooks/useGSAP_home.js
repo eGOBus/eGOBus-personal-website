@@ -2,11 +2,11 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const useGSAP = () => {
+const useGSAP_home = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    const createAnimation = (selector, from, to, trigger, start, extraConfig = {}) => {
+    const createAnimation = (selector, from, to, trigger, start, extraConfig = {}) => { 
       gsap.fromTo(
         selector,
         from,
@@ -47,6 +47,21 @@ const useGSAP = () => {
       ".offer-section",
       "top 70%"
     );
+    createAnimation(
+      ".image",
+      { opacity: 0, scale: 0.9,y:50 },
+      { opacity: 1, scale: 1,y:0, duration: 0.5, stagger: 0.2 },
+      ".offer-section",
+      "top 70%"
+    );
+
+    createAnimation(
+      ".right",
+      { opacity: 0, x:200 },
+      { opacity: 1, x: 0, duration: 1.2, stagger: 0.3 },
+      ".hero-section",
+      "top 80%"
+    );
 
     // "How It Works" Section
     createAnimation(
@@ -72,6 +87,8 @@ const useGSAP = () => {
       ".how-it-works-section",
       "top 80%"
     );
+   
+
 
     // Call-to-Action Section
     createAnimation(
@@ -136,4 +153,4 @@ const useGSAP = () => {
   }, []);
 };
 
-export default useGSAP;
+export default useGSAP_home;
