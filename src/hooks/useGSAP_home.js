@@ -43,7 +43,7 @@ const useGSAP_home = () => {
     createAnimation(
       ".gsap-offer-item",
       { opacity: 0, scale: 0.9 },
-      { opacity: 1, scale: 1, duration: 0.5, stagger: 0.2 },
+      { opacity: 1, scale: 1, duration: 2, stagger: 0.2 },
       ".offer-section",
       "top 70%"
     );
@@ -132,24 +132,9 @@ const useGSAP_home = () => {
       "top 70%"
     );
 
-    // Footer Animation
-    createAnimation(
-      ".gsap-footer",
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1 },
-      ".footer",
-      "top 90%"
-    );
+    
 
-    // Smooth Entry for Background Sections
-    createAnimation(
-      ".gsap-bg",
-      { opacity: 0 },
-      { opacity: 1, duration: 2 },
-      ".hero-section",
-      "top top",
-      { end: "bottom top", scrub: true }
-    );
+    
   }, []);
 };
 

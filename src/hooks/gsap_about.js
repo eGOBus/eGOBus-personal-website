@@ -61,13 +61,55 @@ const gsap_about = () => {
         //     "top 50%"
         //   );
 //Why-Use-e-GOBus-Section
-        // createAnimation(
-        //     ".",
-        //     { opacity: 0, y: 50 },
-        //     { opacity: 1, y: 0, duration: 1.2, stagger: 0.3 },
-        //     ".Why-Use-e-GOBus-Section",
-        //     "top 80%"
-        //   );
+        createAnimation(
+            ".head",
+            { opacity: 0, y: 50 },
+            { opacity: 1, y: 0, duration: 1.2, stagger: 0.3 },
+            ".Why-Use-e-GOBus-Section",
+            "top 80%"
+          );
+          createAnimation(
+            ".Questions",
+            { opacity: 0, x: -100 },
+            { opacity: 1, x: 0, duration: 1.2, stagger: 0.3 },
+            ".Why-Use-e-GOBus-Section",
+            "top 75%"
+          );
+          createAnimation(
+            ".Question",
+            { opacity: 0, x: -50 },
+            { opacity: 1, x: 0, duration: 1, stagger: 0.3 },
+            ".Why-Use-e-GOBus-Section",
+            "top 75%"
+          );
+          createAnimation(
+            ".image",
+            { opacity: 0, x: 50 },
+            { opacity: 1, x: 0,duration: 2},
+            ".Why-Use-e-GOBus-Section",
+            "top 70%"
+          );
+          createAnimation(
+            ".Features ",
+            { opacity: 0, y: 50 },
+            { opacity: 1, y: 0,duration: 2 },
+            ".Why-Use-e-GOBus-Section",
+            "top 65%"
+          );
+          createAnimation(
+            ".last-text",
+            { opacity: 0, x: -50 },
+            { opacity: 1, x: 0, duration: 1.3, stagger: 0.3 },
+            ".Why-Use-e-GOBus-Section",
+            "top 60%"
+          );
+          createAnimation(
+            ".paras ",
+            {  opacity: 0, y: 50  },
+            {  opacity: 1, y: 0, delay: 0.5, duration: 1.5, stagger: 0.3 },
+            ".How-Did-It-All-Start",
+            "top 70%"
+          );
     }, []);
 };
 
