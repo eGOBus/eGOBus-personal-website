@@ -30,6 +30,27 @@ const gsap_contact = () => {
           ".hero-section",
           "top 80%"
         );
+        createAnimation(
+          ".hero-text",
+          { opacity: 0, y: 50 },
+          { opacity: 1, y: 0, duration: 1.2, stagger: 0.3 },
+          ".hero-section",
+          "top 80%"
+        );
+        createAnimation(
+          ".contact ",
+          { opacity: 0, y: 50 },
+          { opacity: 1, y: 0, delay:0.5 ,duration: 1.5, stagger: 0.3 },
+          ".hero-section",
+          "top 75%"
+        );
+        createAnimation(
+          ".map-container ",
+          { opacity: 0, scale: 0.92 },
+          { opacity: 1,  scale:1,duration: 2 },
+          ".map-container",
+          "top 80%"
+        );
     }, []);
 };
 

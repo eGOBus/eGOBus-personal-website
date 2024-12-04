@@ -2,10 +2,11 @@ import React from "react";
 import Footer from "../components/Footer";
 import { FaGooglePlay, FaApple,FaBus } from 'react-icons/fa';
 import "locomotive-scroll/dist/locomotive-scroll.css";
-import useLocomotiveScroll from "../hooks/useLocomotiveScroll";
+import gsapapps from "../hooks/gsapapps";
 
 function Apps() {
-  const scrollRef = useLocomotiveScroll()
+  gsapapps();
+  
   // Sections for the App
   const appSections = [
     {
@@ -63,8 +64,9 @@ function Apps() {
   ];
 
   return (
-    <div ref={scrollRef} className="min-h-screen bg-gray-100 text-gray-800 flex flex-col overflow-x-hidden" data-scroll-container>
-       <header className="bg-yellow-500 text-black pt-8 pb-4 relative">
+    <div 
+     className="min-h-screen bg-gray-100 text-gray-800 flex flex-col overflow-x-hidden" data-scroll-container>
+       <header className="bg-zinc-700 text-black pt-8 pb-4 relative">
         <div className="max-w-5xl mt-10 mx-auto text-center relative ">
           {/* Marquee container */}
           <div className="flex items-center space-x-4  animate-marquee">
@@ -75,7 +77,7 @@ function Apps() {
               className="w-16 h-auto"
             />
             {/* Welcome Text */}
-            <h1 className="text-4xl font-bold text-white  whitespace-nowrap">
+            <h1 className=" text-4xl font-bold text-white  whitespace-nowrap">
   Welcome to e-GO Bus
 </h1>
 </div>
@@ -83,17 +85,17 @@ function Apps() {
       </header>
 
       {/* Introduction Section */}
-      <section className="py-12 bg-white text-gray-800">
+      <section className="hero-section  py-12 bg-white text-gray-800">
         <div className="max-w-5xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-yellow-600 mb-6">
+          <h2 className="hero-text text-3xl font-bold text-yellow-500 mb-6">
             Two Applications, One Goal
           </h2>
-          <p className="text-gray-600 text-lg mb-8">
+          <p className="hero-text1 text-gray-600 text-lg mb-8">
             We offer two robust applications tailored to meet the needs of schools, parents, and drivers:
           </p>
           <div className="grid gap-12 md:grid-cols-2">
             {/* Mobile App Section */}
-            <div className="bg-gray-50 shadow-lg rounded-lg p-6">
+            <div className="mobile-section bg-gray-100 shadow-lg rounded-lg p-6">
               <h3 className="text-xl font-semibold text-yellow-500">Mobile App</h3>
               <p className="text-gray-600 mt-4">
                 A user-friendly mobile application designed for parents, school authorities, and drivers to stay updated on bus schedules, locations, and notifications.
@@ -111,7 +113,7 @@ function Apps() {
             </div>
 
             {/* Web App Section */}
-            <div className="bg-gray-50 shadow-lg rounded-lg p-6">
+            <div className="mobile-section1 bg-gray-100 shadow-lg rounded-lg p-6">
               <h3 className="text-xl font-semibold text-yellow-500">Web Application</h3>
               <p className="text-gray-600 mt-4">
                 A powerful web-based platform for schools to manage students, drivers, and bus schedules seamlessly with bulk data upload and other advanced features.
@@ -132,16 +134,16 @@ function Apps() {
       </section>
 
       {/* App Features */}
-      <section className="py-12 bg-white text-gray-800">
+      <section className="Features py-12 bg-white text-gray-800">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-yellow-600 mb-8">
+          <h2 className="head text-3xl font-bold text-center text-yellow-600 mb-8">
             Explore Our App
           </h2>
           <div className="grid gap-12 md:grid-cols-2">
             {appSections.map((section, index) => (
               <div
                 key={index}
-                className="bg-gray-50 shadow-lg rounded-lg overflow-hidden flex flex-col items-center text-center"
+                className="app bg-gray-50 shadow-lg rounded-lg overflow-hidden flex flex-col items-center text-center"
               >
                 <img
                   src={section.image}
@@ -164,16 +166,16 @@ function Apps() {
       </section>
 
       {/* Website Features */}
-      <section className="py-12 bg-white text-gray-300">
+      <section className="Website py-12 bg-white text-gray-300">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-yellow-400 mb-8">
+          <h2 className="head text-3xl font-bold text-center text-yellow-400 mb-8">
             Website Features
           </h2>
           <div className="grid gap-12 md:grid-cols-2">
             {websiteSections.map((section, index) => (
               <div
                 key={index}
-                className="bg-gray-50 shadow-lg rounded-lg overflow-hidden flex flex-col items-center text-center"
+                className="web bg-gray-50 shadow-lg rounded-lg overflow-hidden flex flex-col items-center text-center"
               >
                 <img
                   src={section.image}

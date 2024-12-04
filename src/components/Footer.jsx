@@ -11,7 +11,7 @@ const Footer = () => {
       />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-fadeIn">
         {/* Top Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* About Us */}
           <div>
             <h3 className="text-xl font-semibold text-white mb-4 hover:text-yellow-400 transition-colors">About Us</h3>
@@ -22,7 +22,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-semibold text-white mb-4 hover:text-yellow-400 transition-colors">Quick Links</h3>
+            <h3 className="text-xl font-semibold text-white mb-4 hover:text-yellow-400 transition-colors ">Quick Links</h3>
             <ul className="space-y-2">
               <li><a href="/" className="hover:text-yellow-400 transition-transform transform hover:scale-105">Home</a></li>
               <li><a href="/about" className="hover:text-yellow-400 transition-transform transform hover:scale-105">About Us</a></li>
@@ -41,26 +41,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter Subscription */}
-          <div>
-            <h3 className="text-xl font-semibold text-white mb-4 hover:text-yellow-400 transition-colors">Stay Updated</h3>
-            <p className="text-gray-400 mb-4">
-              Subscribe to our newsletter to receive the latest updates and offers.
-            </p>
-            <form action="#" method="POST" className="flex flex-col sm:flex-row items-center sm:items-stretch">
-              <input 
-                type="email" 
-                placeholder="Your Email" 
-                required 
-                className="w-full px-4 py-2 mb-2 sm:mb-0 sm:mr-2 text-gray-800 rounded-md focus:outline-none transition-all focus:ring-2 focus:ring-yellow-500"
-              />
-              <button 
-                type="submit" 
-                className="bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600 transition-all transform hover:scale-105"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
+          
         </div>
 
         {/* Divider */}
